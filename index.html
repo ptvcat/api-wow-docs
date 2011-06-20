@@ -1,34 +1,34 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Blizzard Community Platform API Documentation</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2"><meta name="description" content="This is the documentation for the RESTful APIs exposed through the World of Warcraft community site as a service to the World of Warcraft community."></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="book" title="Blizzard Community Platform API Documentation"><div class="titlepage"><div><div><h1 class="title"><a name="id3485231"></a>Blizzard Community Platform API Documentation</h1></div><div><div class="author"><h3 class="author"><span class="orgname">Blizzard Entertainment</span><code class="email">&lt;<a class="email" href="mailto:api-support@blizzard.com">api-support@blizzard.com</a>&gt;</code></h3><code class="email">&lt;<a class="email" href="mailto:api-support@blizzard.com">api-support@blizzard.com</a>&gt;</code></div></div><div><p class="pubdate">6/10/2011</p></div><div><div class="abstract" title="Abstract"><p class="title"><b>Abstract</b></p><p>This is the documentation for the RESTful APIs exposed through the
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Blizzard Community Platform API Documentation</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2"><meta name="description" content="This is the documentation for the RESTful APIs exposed through the World of Warcraft community site as a service to the World of Warcraft community."></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="book" title="Blizzard Community Platform API Documentation"><div class="titlepage"><div><div><h1 class="title"><a name="id3773676"></a>Blizzard Community Platform API Documentation</h1></div><div><div class="author"><h3 class="author"><span class="orgname">Blizzard Entertainment</span><code class="email">&lt;<a class="email" href="mailto:api-support@blizzard.com">api-support@blizzard.com</a>&gt;</code></h3><code class="email">&lt;<a class="email" href="mailto:api-support@blizzard.com">api-support@blizzard.com</a>&gt;</code></div></div><div><p class="pubdate">6/10/2011</p></div><div><div class="abstract" title="Abstract"><p class="title"><b>Abstract</b></p><p>This is the documentation for the RESTful APIs exposed through the
       World of Warcraft community site as a service to the World of Warcraft
-      community.</p></div></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="chapter"><a href="#id3485305">1. Features</a></span></dt><dd><dl><dt><span class="section"><a href="#id3485288">Introduction</a></span></dt><dt><span class="section"><a href="#id3485279">API Features</a></span></dt><dd><dl><dt><span class="section"><a href="#id3485244">Access and Regions</a></span></dt><dt><span class="section"><a href="#id3485460">REST</a></span></dt><dt><span class="section"><a href="#id3485482">Authentication</a></span></dt><dt><span class="section"><a href="#id3485633">Formats and Protocols</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="#id3485646">2. APIs</a></span></dt><dd><dl><dt><span class="section"><a href="#id3485654">Characters</a></span></dt><dd><dl><dt><span class="section"><a href="#id3485665">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#id3486445">Guilds</a></span></dt><dd><dl><dt><span class="section"><a href="#id3486455">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#id3486804">Realms</a></span></dt><dd><dl><dt><span class="section"><a href="#id3486813">Realm Status</a></span></dt></dl></dd><dt><span class="section"><a href="#id3486856">Static Data</a></span></dt><dd><dl><dt><span class="section"><a href="#id3486875">Character Races</a></span></dt><dt><span class="section"><a href="#id3486887">Character Classes</a></span></dt><dt><span class="section"><a href="#id3486900">Guild Rewards</a></span></dt><dt><span class="section"><a href="#id3486912">Guild Perks</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="#id3486925">3. Policies and Best Practices</a></span></dt><dd><dl><dt><span class="section"><a href="#id3486937">Caching</a></span></dt><dt><span class="section"><a href="#id3486960">Throttling</a></span></dt><dt><span class="section"><a href="#id3486999">Support</a></span></dt></dl></dd><dt><span class="article"><a href="#id3487017">API Changes</a></span></dt></dl></div><div class="list-of-examples"><p><b>List of Examples</b></p><dl><dt>1.1. <a href="#id3485400">An example request</a></dt><dt>1.2. <a href="#id3485248">An example response</a></dt><dt>1.3. <a href="#id3485580">An example authenticated request</a></dt><dt>2.1. <a href="#id3485699">Example request</a></dt><dt>2.2. <a href="#id3485710">Example response</a></dt><dt>2.3. <a href="#id3485964">An example guild on Medivh</a></dt><dt>2.4. <a href="#id3485995">An example items field</a></dt><dt>2.5. <a href="#id3486100">An example stats field</a></dt><dt>2.6. <a href="#id3486145">An example talents field</a></dt><dt>2.7. <a href="#id3486241">An example reputation field</a></dt><dt>2.8. <a href="#id3486273">An example titles field</a></dt><dt>2.9. <a href="#id3486309">An example professions field</a></dt><dt>2.10. <a href="#id3486354">An example appearance field</a></dt><dt>2.11. <a href="#id3486380">An example companions field</a></dt><dt>2.12. <a href="#id3486403">An example mounts field</a></dt><dt>2.13. <a href="#id3486427">An example pets field</a></dt><dt>2.14. <a href="#id3486489">Example request</a></dt><dt>2.15. <a href="#id3486501">Example response</a></dt><dt>2.16. <a href="#id3486585">An example members block</a></dt><dt>2.17. <a href="#id3486783">An example achievements block</a></dt><dt>2.18. <a href="#id3486838">An example request and response</a></dt></dl></div><div class="chapter" title="Chapter 1. Features"><div class="titlepage"><div><div><h2 class="title"><a name="id3485305"></a>Chapter 1. Features</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#id3485288">Introduction</a></span></dt><dt><span class="section"><a href="#id3485279">API Features</a></span></dt><dd><dl><dt><span class="section"><a href="#id3485244">Access and Regions</a></span></dt><dt><span class="section"><a href="#id3485460">REST</a></span></dt><dt><span class="section"><a href="#id3485482">Authentication</a></span></dt><dt><span class="section"><a href="#id3485633">Formats and Protocols</a></span></dt></dl></dd></dl></div><div class="section" title="Introduction"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3485288"></a>Introduction</h2></div></div></div><p>The Blizzard Community Platform API provides a number of resources
+      community.</p></div></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="chapter"><a href="#id3773750">1. Features</a></span></dt><dd><dl><dt><span class="section"><a href="#id3773733">Introduction</a></span></dt><dt><span class="section"><a href="#id3773723">API Features</a></span></dt><dd><dl><dt><span class="section"><a href="#id3773688">Access and Regions</a></span></dt><dt><span class="section"><a href="#id3773910">REST</a></span></dt><dt><span class="section"><a href="#id3773931">Authentication</a></span></dt><dt><span class="section"><a href="#id3774080">Formats and Protocols</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="#id3774092">2. APIs</a></span></dt><dd><dl><dt><span class="section"><a href="#id3774100">Characters</a></span></dt><dd><dl><dt><span class="section"><a href="#id3774111">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#id3774889">Guilds</a></span></dt><dd><dl><dt><span class="section"><a href="#id3774899">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#id3775248">Realms</a></span></dt><dd><dl><dt><span class="section"><a href="#id3775257">Realm Status</a></span></dt></dl></dd><dt><span class="section"><a href="#id3775306">Static Data</a></span></dt><dd><dl><dt><span class="section"><a href="#id3775319">Character Races</a></span></dt><dt><span class="section"><a href="#id3775335">Character Classes</a></span></dt><dt><span class="section"><a href="#id3775352">Guild Rewards</a></span></dt><dt><span class="section"><a href="#id3775369">Guild Perks</a></span></dt><dt><span class="section"><a href="#id3775385">Items</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="#id3775434">3. Policies and Best Practices</a></span></dt><dd><dl><dt><span class="section"><a href="#id3775447">Caching</a></span></dt><dt><span class="section"><a href="#id3775469">Throttling</a></span></dt><dt><span class="section"><a href="#id3775508">Support</a></span></dt></dl></dd><dt><span class="article"><a href="#id3775536">API Changes</a></span></dt></dl></div><div class="list-of-examples"><p><b>List of Examples</b></p><dl><dt>1.1. <a href="#id3773844">An example request</a></dt><dt>1.2. <a href="#id3773855">An example response</a></dt><dt>1.3. <a href="#id3774029">An example authenticated request</a></dt><dt>2.1. <a href="#id3774145">Example request</a></dt><dt>2.2. <a href="#id3774155">Example response</a></dt><dt>2.3. <a href="#id3774409">An example guild on Medivh</a></dt><dt>2.4. <a href="#id3774441">An example items field</a></dt><dt>2.5. <a href="#id3774545">An example stats field</a></dt><dt>2.6. <a href="#id3774588">An example talents field</a></dt><dt>2.7. <a href="#id3774684">An example reputation field</a></dt><dt>2.8. <a href="#id3774715">An example titles field</a></dt><dt>2.9. <a href="#id3774753">An example professions field</a></dt><dt>2.10. <a href="#id3774799">An example appearance field</a></dt><dt>2.11. <a href="#id3774824">An example companions field</a></dt><dt>2.12. <a href="#id3774847">An example mounts field</a></dt><dt>2.13. <a href="#id3774870">An example pets field</a></dt><dt>2.14. <a href="#id3774927">Example request</a></dt><dt>2.15. <a href="#id3774943">Example response</a></dt><dt>2.16. <a href="#id3775029">An example members block</a></dt><dt>2.17. <a href="#id3775226">An example achievements block</a></dt><dt>2.18. <a href="#id3775281">An example request and response</a></dt><dt>2.19. <a href="#id3775401">An example item data API request and response</a></dt></dl></div><div class="chapter" title="Chapter 1. Features"><div class="titlepage"><div><div><h2 class="title"><a name="id3773750"></a>Chapter 1. Features</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#id3773733">Introduction</a></span></dt><dt><span class="section"><a href="#id3773723">API Features</a></span></dt><dd><dl><dt><span class="section"><a href="#id3773688">Access and Regions</a></span></dt><dt><span class="section"><a href="#id3773910">REST</a></span></dt><dt><span class="section"><a href="#id3773931">Authentication</a></span></dt><dt><span class="section"><a href="#id3774080">Formats and Protocols</a></span></dt></dl></dd></dl></div><div class="section" title="Introduction"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3773733"></a>Introduction</h2></div></div></div><p>The Blizzard Community Platform API provides a number of resources
       for developers and Wow enthusiasts to gather data about their
       characters, guilds and arena teams. This documentation is primarily for
       developers and third parties.</p><p>Blizzard's epic gaming experiences often take place in game, but
       can lead to rewarding and lasting experiences out of game as well.
       Through exposing key sets of data, we can enable the community to create
-      extended communities to continue that epic experience.</p></div><div class="section" title="API Features"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3485279"></a>API Features</h2></div></div></div><p>The API has a number of features that you, as a developer, should
-      be aware of.</p><div class="section" title="Access and Regions"><div class="titlepage"><div><div><h3 class="title"><a name="id3485244"></a>Access and Regions</h3></div></div></div><p>To access the API, HTTP requests can be made to specific urls
-        and resources exposed on the regional battle.net domains.</p><div class="example"><a name="id3485400"></a><p class="title"><b>Example 1.1. An example request</b></p><div class="example-contents"><pre class="programlisting">GET /api/wow/realm/status HTTP/1.1
+      extended communities to continue that epic experience.</p></div><div class="section" title="API Features"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3773723"></a>API Features</h2></div></div></div><p>The API has a number of features that you, as a developer, should
+      be aware of.</p><div class="section" title="Access and Regions"><div class="titlepage"><div><div><h3 class="title"><a name="id3773688"></a>Access and Regions</h3></div></div></div><p>To access the API, HTTP requests can be made to specific urls
+        and resources exposed on the regional battle.net domains.</p><div class="example"><a name="id3773844"></a><p class="title"><b>Example 1.1. An example request</b></p><div class="example-contents"><pre class="programlisting">GET /api/wow/realm/status HTTP/1.1
 Host: us.battle.net
-&lt;http headers&gt;</pre></div></div><br class="example-break"><div class="example"><a name="id3485248"></a><p class="title"><b>Example 1.2. An example response</b></p><div class="example-contents"><pre class="programlisting">HTTP/1.1 200 OK
+&lt;http headers&gt;</pre></div></div><br class="example-break"><div class="example"><a name="id3773855"></a><p class="title"><b>Example 1.2. An example response</b></p><div class="example-contents"><pre class="programlisting">HTTP/1.1 200 OK
 &lt;http headers&gt;
 
 {"realms":[ ... ]}</pre></div></div><br class="example-break"><p>The regions where this API is available are:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>us.battle.net</p></li><li class="listitem"><p>eu.battle.net</p></li><li class="listitem"><p>kr.battle.net</p></li><li class="listitem"><p>tw.battle.net</p></li><li class="listitem"><p>battlenet.com.cn</p></li></ul></div><p>The data available through the API is limited to the region that
         it is in. Hence, US APIs accessed through us.battle.net will only
         contain data within US battlegroups and realms and supports the
-        locales of the us.battle.net/wow community site.</p></div><div class="section" title="REST"><div class="titlepage"><div><div><h3 class="title"><a name="id3485460"></a>REST</h3></div></div></div><p>The API is <span class="emphasis"><em>mostly</em></span> restful. Data is exposed
+        locales of the us.battle.net/wow community site.</p></div><div class="section" title="REST"><div class="titlepage"><div><div><h3 class="title"><a name="id3773910"></a>REST</h3></div></div></div><p>The API is <span class="emphasis"><em>mostly</em></span> restful. Data is exposed
         in the form of URIs that represent resources and can be fetched with
         HTTP clients (like web browsers). At this time, the entirety of the
         API is limited to read-only operations.<em><span class="remark">I'm not terribly
         pleased with this section. Things we should probably also reference
-        include any quirks or behaviors that are un-rest-like.</span></em></p></div><div class="section" title="Authentication"><div class="titlepage"><div><div><h3 class="title"><a name="id3485482"></a>Authentication</h3></div></div></div><p>Although most of the application can be accessed without any
+        include any quirks or behaviors that are un-rest-like.</span></em></p></div><div class="section" title="Authentication"><div class="titlepage"><div><div><h3 class="title"><a name="id3773931"></a>Authentication</h3></div></div></div><p>Although most of the application can be accessed without any
         form of authentication, we do support a form application registration
         and authentication. Application authentication involves creating and
         including an application identifier and a request signature and
         including those values with the request headers.</p><p>To send authenticated request you first need to register an
         application.</p><p>Explain the backstory of application identification and
         authentication.</p><p>List and describe the perks of opting into this process.</p><p>Describe the signing process and the changes in how API requests
-        are crafted and made.</p><div class="section" title="Application Registration"><div class="titlepage"><div><div><h4 class="title"><a name="id3485516"></a>Application Registration</h4></div></div></div><p>To send authenticated request you first need to register an
+        are crafted and made.</p><div class="section" title="Application Registration"><div class="titlepage"><div><div><h4 class="title"><a name="id3773966"></a>Application Registration</h4></div></div></div><p>To send authenticated request you first need to register an
           application. Because registration isn't automated, we would like to
           limit application registration to those who meet the following
           criteria:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>You plan on making requests from one or more IP addresses,
@@ -39,9 +39,9 @@ Host: us.battle.net
               purposes.</p></li></ul></div><p>Registering an application is a matter of sending information
           about your application, how you plan on using the API and your
           contact information to api-support@blizzard.com with the subject
-          "Application Registration Request".</p></div><div class="section" title="Authentication Process"><div class="titlepage"><div><div><h4 class="title"><a name="id3485567"></a>Authentication Process</h4></div></div></div><p>To authentice a request, simple include the "Authorization"
+          "Application Registration Request".</p></div><div class="section" title="Authentication Process"><div class="titlepage"><div><div><h4 class="title"><a name="id3774016"></a>Authentication Process</h4></div></div></div><p>To authentice a request, simple include the "Authorization"
           header with your application identifier and the request
-          signature.</p><div class="example"><a name="id3485580"></a><p class="title"><b>Example 1.3. An example authenticated request</b></p><div class="example-contents"><pre class="programlisting">GET /api/wow/character/Medivh/Thrall HTTP/1.1
+          signature.</p><div class="example"><a name="id3774029"></a><p class="title"><b>Example 1.3. An example authenticated request</b></p><div class="example-contents"><pre class="programlisting">GET /api/wow/character/Medivh/Thrall HTTP/1.1
 Host: us.battle.net
 Date: Fri, 10 Jun 2011 20:59:24 GMT
 Authorization: <code class="computeroutput">BNET</code> <code class="computeroutput">c1fbf21b79c03191d</code>:<code class="computeroutput">+3fE0RaKc+PqxN0gi8va5GQC35A=</code></pre></div></div><br class="example-break"><p>In the above exmple, the value of the Authorization header has
@@ -68,9 +68,9 @@ StringToSign = "GET" + "\n" +
 "Fri, 10 Jun 2011 21:37:34 GMT" + "\n" +
 UrlPath + "\n";
 
-UrlPath = "/api/wow/realm/status"</pre></div></div><div class="section" title="Formats and Protocols"><div class="titlepage"><div><div><h3 class="title"><a name="id3485633"></a>Formats and Protocols</h3></div></div></div><p>At this point, the only format that data is provided is
-        JSON.</p></div></div></div><div class="chapter" title="Chapter 2. APIs"><div class="titlepage"><div><div><h2 class="title"><a name="id3485646"></a>Chapter 2. APIs</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#id3485654">Characters</a></span></dt><dd><dl><dt><span class="section"><a href="#id3485665">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#id3486445">Guilds</a></span></dt><dd><dl><dt><span class="section"><a href="#id3486455">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#id3486804">Realms</a></span></dt><dd><dl><dt><span class="section"><a href="#id3486813">Realm Status</a></span></dt></dl></dd><dt><span class="section"><a href="#id3486856">Static Data</a></span></dt><dd><dl><dt><span class="section"><a href="#id3486875">Character Races</a></span></dt><dt><span class="section"><a href="#id3486887">Character Classes</a></span></dt><dt><span class="section"><a href="#id3486900">Guild Rewards</a></span></dt><dt><span class="section"><a href="#id3486912">Guild Perks</a></span></dt></dl></dd></dl></div><div class="section" title="Characters"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3485654"></a>Characters</h2></div></div></div><p>Character APIs currently provide character profile
-      information.</p><div class="section" title="Profile API"><div class="titlepage"><div><div><h3 class="title"><a name="id3485665"></a>Profile API</h3></div></div></div><p>The character profile API is the primary way to access character
+UrlPath = "/api/wow/realm/status"</pre></div></div><div class="section" title="Formats and Protocols"><div class="titlepage"><div><div><h3 class="title"><a name="id3774080"></a>Formats and Protocols</h3></div></div></div><p>At this point, the only format that data is provided is
+        JSON.</p></div></div></div><div class="chapter" title="Chapter 2. APIs"><div class="titlepage"><div><div><h2 class="title"><a name="id3774092"></a>Chapter 2. APIs</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#id3774100">Characters</a></span></dt><dd><dl><dt><span class="section"><a href="#id3774111">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#id3774889">Guilds</a></span></dt><dd><dl><dt><span class="section"><a href="#id3774899">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#id3775248">Realms</a></span></dt><dd><dl><dt><span class="section"><a href="#id3775257">Realm Status</a></span></dt></dl></dd><dt><span class="section"><a href="#id3775306">Static Data</a></span></dt><dd><dl><dt><span class="section"><a href="#id3775319">Character Races</a></span></dt><dt><span class="section"><a href="#id3775335">Character Classes</a></span></dt><dt><span class="section"><a href="#id3775352">Guild Rewards</a></span></dt><dt><span class="section"><a href="#id3775369">Guild Perks</a></span></dt><dt><span class="section"><a href="#id3775385">Items</a></span></dt></dl></dd></dl></div><div class="section" title="Characters"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3774100"></a>Characters</h2></div></div></div><p>Character APIs currently provide character profile
+      information.</p><div class="section" title="Profile API"><div class="titlepage"><div><div><h3 class="title"><a name="id3774111"></a>Profile API</h3></div></div></div><p>The character profile API is the primary way to access character
         information. This character profile API can be used to fetch a single
         character at a time through an HTTP GET request to a url describing
         the character profile resource. By default, a basic dataset will be
@@ -82,14 +82,14 @@ Realm = &lt;proper realm name&gt; | &lt;normalized realm name&gt;</pre><p>There 
         this resource, although the fields query string parameter can
         optionally be passed to indicate that one or more of the optional
         datasets is to be retrieved. Those additional fields are listed in the
-        subsection titled "Optional Fields".</p><div class="example"><a name="id3485699"></a><p class="title"><b>Example 2.1. Example request</b></p><div class="example-contents"><pre class="programlisting">GET /api/wow/character/Medivh/Uther
-Host: us.battle.net</pre></div></div><br class="example-break"><div class="example"><a name="id3485710"></a><p class="title"><b>Example 2.2. Example response</b></p><div class="example-contents"><pre class="programlisting">HTTP/1.1 200 OK
+        subsection titled "Optional Fields".</p><div class="example"><a name="id3774145"></a><p class="title"><b>Example 2.1. Example request</b></p><div class="example-contents"><pre class="programlisting">GET /api/wow/character/Medivh/Uther
+Host: us.battle.net</pre></div></div><br class="example-break"><div class="example"><a name="id3774155"></a><p class="title"><b>Example 2.2. Example response</b></p><div class="example-contents"><pre class="programlisting">HTTP/1.1 200 OK
 &lt;http headers&gt;
 
 {'realm': 'Medivh', 'name': 'Uther', 'level': 85, 'lastModified': 1307596000000, 'thumbnail': 'medivh/1/1-avatar.jpg',
 'race': 1, 'achievementPoints': 9745, 'gender': 0, 'class': 2}</pre></div></div><br class="example-break"><p>The core dataset returned includes the character's realm, name,
         level, last modified timestamp, thumbnail, race id, achievement points
-        value, gender id and class id.</p><div class="section" title="Optional Fields"><div class="titlepage"><div><div><h4 class="title"><a name="id3485733"></a>Optional Fields</h4></div></div></div><p>This section contains a list of the optional fields that can
+        value, gender id and class id.</p><div class="section" title="Optional Fields"><div class="titlepage"><div><div><h4 class="title"><a name="id3774177"></a>Optional Fields</h4></div></div></div><p>This section contains a list of the optional fields that can
           be requested.</p><div class="variablelist"><dl><dt><span class="term">guild</span></dt><dd><p>A summary of the guild that the character belongs to. If
                 the character does not belong to a guild and this field is
                 requested, this field will not be exposed.</p></dd><dt><span class="term">stats</span></dt><dd><p>A map of character attributes and stats.</p></dd><dt><span class="term">talents</span></dt><dd><p>A list of talent structures.</p></dd><dt><span class="term">items</span></dt><dd><p>A list of items equipted by the character. Use of this
@@ -104,8 +104,8 @@ Host: us.battle.net</pre></div></div><br class="example-break"><div class="examp
                 character.</p></dd><dt><span class="term">mounts</span></dt><dd><p>A list of all of the mounts obtained by the
                 character.</p></dd><dt><span class="term">pets</span></dt><dd><p>A list of all of the combat pets obtained by the
                 character. At this point, we are not exposing pet talent
-                information.</p></dd></dl></div><div class="section" title="guild"><div class="titlepage"><div><div><h5 class="title"><a name="id3485952"></a>guild</h5></div></div></div><p>When a guild is requested, a map is returned with key/value
-            pairs that describe a basic set of guild information.</p><div class="example"><a name="id3485964"></a><p class="title"><b>Example 2.3. An example guild on Medivh</b></p><div class="example-contents"><pre class="screen">{
+                information.</p></dd></dl></div><div class="section" title="guild"><div class="titlepage"><div><div><h5 class="title"><a name="id3774397"></a>guild</h5></div></div></div><p>When a guild is requested, a map is returned with key/value
+            pairs that describe a basic set of guild information.</p><div class="example"><a name="id3774409"></a><p class="title"><b>Example 2.3. An example guild on Medivh</b></p><div class="example-contents"><pre class="programlisting">{
   "guild":{
     "name":"Roll the Dice",
     "realm":"Medivh",
@@ -120,9 +120,9 @@ Host: us.battle.net</pre></div></div><br class="example-break"><div class="examp
       "backgroundColor":"ffffff91"
     }
   }
-}</pre></div></div><br class="example-break"></div><div class="section" title="items"><div class="titlepage"><div><div><h5 class="title"><a name="id3485982"></a>items</h5></div></div></div><p>When the items field is used, a map structure is returned
+}</pre></div></div><br class="example-break"></div><div class="section" title="items"><div class="titlepage"><div><div><h5 class="title"><a name="id3774427"></a>items</h5></div></div></div><p>When the items field is used, a map structure is returned
             that contains information on the equipped items of that character
-            as well as the average item level of the character.</p><div class="example"><a name="id3485995"></a><p class="title"><b>Example 2.4. An example items field</b></p><div class="example-contents"><pre class="screen">{
+            as well as the average item level of the character.</p><div class="example"><a name="id3774441"></a><p class="title"><b>Example 2.4. An example items field</b></p><div class="example-contents"><pre class="programlisting">{
   "items":{
     "averageItemLevel":361,
     "averageItemLevelEquipped":359,
@@ -333,8 +333,8 @@ Host: us.battle.net</pre></div></div><br class="example-break"><div class="examp
 }
 </pre></div></div><br class="example-break"><p>It is important to note the use of ids when identifying the
             item and the item attributes and subcomponents, like gems and
-            enchantments.</p></div><div class="section" title="stats"><div class="titlepage"><div><div><h5 class="title"><a name="id3486087"></a>stats</h5></div></div></div><p><em><span class="remark">NKG: Fill in an caveats or quirks in accessing
-            stats. Mention lack of base stat.</span></em></p><div class="example"><a name="id3486100"></a><p class="title"><b>Example 2.5. An example stats field</b></p><div class="example-contents"><pre class="screen">{
+            enchantments.</p></div><div class="section" title="stats"><div class="titlepage"><div><div><h5 class="title"><a name="id3774531"></a>stats</h5></div></div></div><p><em><span class="remark">NKG: Fill in an caveats or quirks in accessing
+            stats. Mention lack of base stat.</span></em></p><div class="example"><a name="id3774545"></a><p class="title"><b>Example 2.5. An example stats field</b></p><div class="example-contents"><pre class="programlisting">{
   "stats":{
     "health":155263,
     "powerType":"mana",
@@ -386,8 +386,8 @@ Host: us.battle.net</pre></div></div><br class="example-break"><div class="examp
     "rangedHitRating":58
   }
 }
-</pre></div></div><br class="example-break"></div><div class="section" title="talents"><div class="titlepage"><div><div><h5 class="title"><a name="id3486131"></a>talents</h5></div></div></div><p><em><span class="remark">NKG: Make note of known glyphs not being
-            listed.</span></em></p><div class="example"><a name="id3486145"></a><p class="title"><b>Example 2.6. An example talents field</b></p><div class="example-contents"><pre class="screen">{
+</pre></div></div><br class="example-break"></div><div class="section" title="talents"><div class="titlepage"><div><div><h5 class="title"><a name="id3774574"></a>talents</h5></div></div></div><p><em><span class="remark">NKG: Make note of known glyphs not being
+            listed.</span></em></p><div class="example"><a name="id3774588"></a><p class="title"><b>Example 2.6. An example talents field</b></p><div class="example-contents"><pre class="programlisting">{
   "talents":[
     {
       "selected":true,
@@ -554,8 +554,8 @@ Host: us.battle.net</pre></div></div><br class="example-break"><div class="examp
     }
   ]
 }
-</pre></div></div><br class="example-break"></div><div class="section" title="reputation"><div class="titlepage"><div><div><h5 class="title"><a name="id3486226"></a>reputation</h5></div></div></div><p><em><span class="remark">NKG: Note that the following example was shortened
-            because this list can be quite long.</span></em></p><div class="example"><a name="id3486241"></a><p class="title"><b>Example 2.7. An example reputation field</b></p><div class="example-contents"><pre class="screen">{
+</pre></div></div><br class="example-break"></div><div class="section" title="reputation"><div class="titlepage"><div><div><h5 class="title"><a name="id3774669"></a>reputation</h5></div></div></div><p><em><span class="remark">NKG: Note that the following example was shortened
+            because this list can be quite long.</span></em></p><div class="example"><a name="id3774684"></a><p class="title"><b>Example 2.7. An example reputation field</b></p><div class="example-contents"><pre class="programlisting">{
   "reputation":[
     {
       "id":369,
@@ -594,7 +594,7 @@ Host: us.battle.net</pre></div></div><br class="example-break"><div class="examp
     }
   ]
 }
-</pre></div></div><br class="example-break"></div><div class="section" title="titles"><div class="titlepage"><div><div><h5 class="title"><a name="id3486262"></a>titles</h5></div></div></div><p></p><div class="example"><a name="id3486273"></a><p class="title"><b>Example 2.8. An example titles field</b></p><div class="example-contents"><pre class="screen">{
+</pre></div></div><br class="example-break"></div><div class="section" title="titles"><div class="titlepage"><div><div><h5 class="title"><a name="id3774705"></a>titles</h5></div></div></div><p></p><div class="example"><a name="id3774715"></a><p class="title"><b>Example 2.8. An example titles field</b></p><div class="example-contents"><pre class="programlisting">{
   "titles":[
     {
       "id":62,
@@ -639,8 +639,8 @@ Host: us.battle.net</pre></div></div><br class="example-break"><div class="examp
     }
   ]
 }
-</pre></div></div><br class="example-break"></div><div class="section" title="professions"><div class="titlepage"><div><div><h5 class="title"><a name="id3486294"></a>professions</h5></div></div></div><p><em><span class="remark">NKG: Note that archaeology is still being worked on
-            and some data for it will be missing.</span></em></p><div class="example"><a name="id3486309"></a><p class="title"><b>Example 2.9. An example professions field</b></p><div class="example-contents"><pre class="screen">{
+</pre></div></div><br class="example-break"></div><div class="section" title="professions"><div class="titlepage"><div><div><h5 class="title"><a name="id3774738"></a>professions</h5></div></div></div><p><em><span class="remark">NKG: Note that archaeology is still being worked on
+            and some data for it will be missing.</span></em></p><div class="example"><a name="id3774753"></a><p class="title"><b>Example 2.9. An example professions field</b></p><div class="example-contents"><pre class="programlisting">{
   "professions":{
     "primary":[
       {
@@ -721,7 +721,7 @@ Host: us.battle.net</pre></div></div><br class="example-break"><div class="examp
     ]
   }
 }
-</pre></div></div><br class="example-break"></div><div class="section" title="appearance"><div class="titlepage"><div><div><h5 class="title"><a name="id3486344"></a>appearance</h5></div></div></div><p></p><div class="example"><a name="id3486354"></a><p class="title"><b>Example 2.10. An example appearance field</b></p><div class="example-contents"><pre class="screen">{
+</pre></div></div><br class="example-break"></div><div class="section" title="appearance"><div class="titlepage"><div><div><h5 class="title"><a name="id3774789"></a>appearance</h5></div></div></div><p></p><div class="example"><a name="id3774799"></a><p class="title"><b>Example 2.10. An example appearance field</b></p><div class="example-contents"><pre class="programlisting">{
   "appearance":{
     "faceVariation":2,
     "skinColor":0,
@@ -731,7 +731,7 @@ Host: us.battle.net</pre></div></div><br class="example-break"><div class="examp
     "showHelm":true,
     "showCloak":true
   }
-}</pre></div></div><br class="example-break"></div><div class="section" title="companions"><div class="titlepage"><div><div><h5 class="title"><a name="id3486371"></a>companions</h5></div></div></div><p></p><div class="example"><a name="id3486380"></a><p class="title"><b>Example 2.11. An example companions field</b></p><div class="example-contents"><pre class="screen">{
+}</pre></div></div><br class="example-break"></div><div class="section" title="companions"><div class="titlepage"><div><div><h5 class="title"><a name="id3774815"></a>companions</h5></div></div></div><p></p><div class="example"><a name="id3774824"></a><p class="title"><b>Example 2.11. An example companions field</b></p><div class="example-contents"><pre class="programlisting">{
   "companions":[
     4055,
     10673,
@@ -739,11 +739,11 @@ Host: us.battle.net</pre></div></div><br class="example-break"><div class="examp
     10676,
     10677
   ]
-}</pre></div></div><br class="example-break"></div><div class="section" title="mounts"><div class="titlepage"><div><div><h5 class="title"><a name="id3486394"></a>mounts</h5></div></div></div><p></p><div class="example"><a name="id3486403"></a><p class="title"><b>Example 2.12. An example mounts field</b></p><div class="example-contents"><pre class="screen">{
+}</pre></div></div><br class="example-break"></div><div class="section" title="mounts"><div class="titlepage"><div><div><h5 class="title"><a name="id3774839"></a>mounts</h5></div></div></div><p></p><div class="example"><a name="id3774847"></a><p class="title"><b>Example 2.12. An example mounts field</b></p><div class="example-contents"><pre class="programlisting">{
   "mounts":[
     30174
   ]
-}</pre></div></div><br class="example-break"></div><div class="section" title="pets"><div class="titlepage"><div><div><h5 class="title"><a name="id3486417"></a>pets</h5></div></div></div><p></p><div class="example"><a name="id3486427"></a><p class="title"><b>Example 2.13. An example pets field</b></p><div class="example-contents"><pre class="screen">{
+}</pre></div></div><br class="example-break"></div><div class="section" title="pets"><div class="titlepage"><div><div><h5 class="title"><a name="id3774860"></a>pets</h5></div></div></div><p></p><div class="example"><a name="id3774870"></a><p class="title"><b>Example 2.13. An example pets field</b></p><div class="example-contents"><pre class="programlisting">{
   "pets":[
     {
       "name":"Wolf",
@@ -767,7 +767,7 @@ Host: us.battle.net</pre></div></div><br class="example-break"><div class="examp
       "slot":6
     }
   ]
-}</pre></div></div><br class="example-break"></div></div></div></div><div class="section" title="Guilds"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3486445"></a>Guilds</h2></div></div></div><p>Guild APIs currently provide guild profile information.</p><div class="section" title="Profile API"><div class="titlepage"><div><div><h3 class="title"><a name="id3486455"></a>Profile API</h3></div></div></div><p>The guild profile API is the primary way to access guild
+}</pre></div></div><br class="example-break"></div></div></div></div><div class="section" title="Guilds"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3774889"></a>Guilds</h2></div></div></div><p>Guild APIs currently provide guild profile information.</p><div class="section" title="Profile API"><div class="titlepage"><div><div><h3 class="title"><a name="id3774899"></a>Profile API</h3></div></div></div><p>The guild profile API is the primary way to access guild
         information. This guild profile API can be used to fetch a single
         guild at a time through an HTTP GET request to a url describing the
         guild profile resource. By default, a basic dataset will be returned
@@ -779,17 +779,17 @@ Realm = &lt;proper realm name&gt; | &lt;normalized realm name&gt;</pre><p>There 
         this resource, although the fields query string parameter can
         optionally be passed to indicate that one or more of the optional
         datasets is to be retrieved. Those additional fields are listed in the
-        subsection titled "Optional Fields".</p><div class="example"><a name="id3486489"></a><p class="title"><b>Example 2.14. Example request</b></p><div class="example-contents"><pre class="programlisting">GET /api/wow/guild/Medivh/Roll the Dice
-Host: us.battle.net</pre></div></div><br class="example-break"><div class="example"><a name="id3486501"></a><p class="title"><b>Example 2.15. Example response</b></p><div class="example-contents"><pre class="programlisting">HTTP/1.1 200 OK
+        subsection titled "Optional Fields".</p><div class="example"><a name="id3774927"></a><p class="title"><b>Example 2.14. Example request</b></p><div class="example-contents"><pre class="programlisting">GET /api/wow/guild/Medivh/Roll the Dice
+Host: us.battle.net</pre></div></div><br class="example-break"><div class="example"><a name="id3774943"></a><p class="title"><b>Example 2.15. Example response</b></p><div class="example-contents"><pre class="programlisting">HTTP/1.1 200 OK
 &lt;http headers&gt;
 
 { "name":"Roll the Dice", "level":25, "side":"alliance", "achievementPoints":800 }</pre></div></div><br class="example-break"><p>The core dataset returned includes the guild's name, level,
-        faction and achievement points.</p><div class="section" title="Optional Fields"><div class="titlepage"><div><div><h4 class="title"><a name="id3486518"></a>Optional Fields</h4></div></div></div><p>This section contains a list of the optional fields that can
+        faction and achievement points.</p><div class="section" title="Optional Fields"><div class="titlepage"><div><div><h4 class="title"><a name="id3774962"></a>Optional Fields</h4></div></div></div><p>This section contains a list of the optional fields that can
           be requested.</p><div class="variablelist"><dl><dt><span class="term">members</span></dt><dd><p>A list of characters that are a member of the
                 guild</p></dd><dt><span class="term">achievements</span></dt><dd><p>A set of data structures that describe the achievements
-                earned by the guild.</p></dd></dl></div><div class="section" title="members"><div class="titlepage"><div><div><h5 class="title"><a name="id3486572"></a>members</h5></div></div></div><p>When the members list is requrested, a list of character
+                earned by the guild.</p></dd></dl></div><div class="section" title="members"><div class="titlepage"><div><div><h5 class="title"><a name="id3775016"></a>members</h5></div></div></div><p>When the members list is requrested, a list of character
             objects is returned. Each object in the returned members list
-            contains a character block as well as a rank field.</p><div class="example"><a name="id3486585"></a><p class="title"><b>Example 2.16. An example members block</b></p><div class="example-contents"><pre class="screen">  "members":[
+            contains a character block as well as a rank field.</p><div class="example"><a name="id3775029"></a><p class="title"><b>Example 2.16. An example members block</b></p><div class="example-contents"><pre class="programlisting">  "members":[
     {
       "character":{
         "name":"Mequieres",
@@ -946,7 +946,7 @@ Host: us.battle.net</pre></div></div><br class="example-break"><div class="examp
       },
       "rank":7
     }
-  ]</pre></div></div><br class="example-break"></div><div class="section" title="achievements"><div class="titlepage"><div><div><h5 class="title"><a name="id3486652"></a>achievements</h5></div></div></div><p>When requesting achievement data, several sets of data will
+  ]</pre></div></div><br class="example-break"></div><div class="section" title="achievements"><div class="titlepage"><div><div><h5 class="title"><a name="id3775096"></a>achievements</h5></div></div></div><p>When requesting achievement data, several sets of data will
             be returned.</p><div class="variablelist"><dl><dt><span class="term">achievementsCompleted</span></dt><dd><p>A list of achievement ids.</p></dd><dt><span class="term">achievementsCompletedTimestamp</span></dt><dd><p>A list of timestamps whose places corrospond to the
                   achievement ids in the "achievementsCompleted" list. The
                   value of each timestamp indicates when the related
@@ -959,22 +959,22 @@ Host: us.battle.net</pre></div></div><br class="example-break"><div class="examp
                   criteria.</p></dd><dt><span class="term">criteriaCreated</span></dt><dd><p>A list of timestamps where the value represents when
                   the criteria was considered started. The position of a value
                   corrosponds to the position of a given achivement
-                  criteria.</p></dd></dl></div><div class="example"><a name="id3486783"></a><p class="title"><b>Example 2.17. An example achievements block</b></p><div class="example-contents"><pre class="programlisting">"achievements":{
+                  criteria.</p></dd></dl></div><div class="example"><a name="id3775226"></a><p class="title"><b>Example 2.17. An example achievements block</b></p><div class="example-contents"><pre class="programlisting">"achievements":{
     "achievementsCompleted":[4860,4861,4912,4913,4943],
     "achievementsCompletedTimestamp":[1305087854000,1292834684000,1307514307000,1296629625000,1292837842000],
     "criteria":[13756,13757,13835,13864,13865],
     "criteriaQuantity":[25,500300151,1,525,525],
     "criteriaTimestamp":[1307514307000,1296629625000,1292834684000,1292744289000,1293154824000],
     "criteriaCreated":[1291708917000,1291716646000,1292834684000,1292573188000,1292728137000]
-  }</pre></div></div><br class="example-break"></div></div></div></div><div class="section" title="Realms"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3486804"></a>Realms</h2></div></div></div><p>Realm APIs currently provide realm status information.</p><div class="section" title="Realm Status"><div class="titlepage"><div><div><h3 class="title"><a name="id3486813"></a>Realm Status</h3></div></div></div><p>The realm status API allows developers to retrieve realm status
+  }</pre></div></div><br class="example-break"></div></div></div></div><div class="section" title="Realms"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3775248"></a>Realms</h2></div></div></div><p>Realm APIs currently provide realm status information.</p><div class="section" title="Realm Status"><div class="titlepage"><div><div><h3 class="title"><a name="id3775257"></a>Realm Status</h3></div></div></div><p>The realm status API allows developers to retrieve realm status
         information. This information is limited to whether or not the realm
         is up, the type and state of the realm and the current
         population.</p><pre class="programlisting">URL = "/api/wow/realm/status"</pre><p>There are no required query string parameters when accessing
         this resource, although the realms query string parameter can
         optionally be passed to limit the realms returned to one or
-        more.</p><div class="example"><a name="id3486838"></a><p class="title"><b>Example 2.18. An example request and response</b></p><div class="example-contents"><pre class="screen">GET /api/wow/realm/status?realms=Medivh,Lightbringer HTTP/1.1
+        more.</p><div class="example"><a name="id3775281"></a><p class="title"><b>Example 2.18. An example request and response</b></p><div class="example-contents"><pre class="programlisting">GET /api/wow/realm/status?realms=Medivh,Lightbringer HTTP/1.1
 Host: us.battle.net
-&lt;http headers&gt;</pre><pre class="screen">HTTP/1.1 200 OK
+&lt;http headers&gt;</pre><pre class="programlisting">HTTP/1.1 200 OK
 &lt;http headers&gt;
 
 {
@@ -996,17 +996,72 @@ Host: us.battle.net
       "slug":"medivh"
     }
   ]
-}</pre></div></div><br class="example-break"></div></div><div class="section" title="Static Data"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3486856"></a>Static Data</h2></div></div></div><p>The static data APIs provide information that can compliment
+}</pre></div></div><br class="example-break"></div></div><div class="section" title="Static Data"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3775306"></a>Static Data</h2></div></div></div><p>The static data APIs provide information that can compliment
       profile information to provide structure or definition to the data
-      provided.</p><div class="section" title="Character Races"><div class="titlepage"><div><div><h3 class="title"><a name="id3486875"></a>Character Races</h3></div></div></div><p>The character races data API provides a list of character
-        races.</p></div><div class="section" title="Character Classes"><div class="titlepage"><div><div><h3 class="title"><a name="id3486887"></a>Character Classes</h3></div></div></div><p>The character classes data API provides a list of character
-        classes.</p></div><div class="section" title="Guild Rewards"><div class="titlepage"><div><div><h3 class="title"><a name="id3486900"></a>Guild Rewards</h3></div></div></div><p>The guild rewards data API provides a list of all guild
-        rewards.</p></div><div class="section" title="Guild Perks"><div class="titlepage"><div><div><h3 class="title"><a name="id3486912"></a>Guild Perks</h3></div></div></div><p>The guild perks data API provides a list of all guild
-        perks.</p></div></div></div><div class="chapter" title="Chapter 3. Policies and Best Practices"><div class="titlepage"><div><div><h2 class="title"><a name="id3486925"></a>Chapter 3. Policies and Best Practices</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#id3486937">Caching</a></span></dt><dt><span class="section"><a href="#id3486960">Throttling</a></span></dt><dt><span class="section"><a href="#id3486999">Support</a></span></dt></dl></div><p>This chapter will outline API policies and best practices when
-    interacting with the API.</p><div class="section" title="Caching"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3486937"></a>Caching</h2></div></div></div><p>Caching policies should be used by client developers and API
+      provided.</p><div class="section" title="Character Races"><div class="titlepage"><div><div><h3 class="title"><a name="id3775319"></a>Character Races</h3></div></div></div><p>The character races data API provides a list of character
+        races.</p><pre class="programlisting">URL = "/api/wow/data/character/races"</pre></div><div class="section" title="Character Classes"><div class="titlepage"><div><div><h3 class="title"><a name="id3775335"></a>Character Classes</h3></div></div></div><p>The character classes data API provides a list of character
+        classes.</p><pre class="programlisting">URL = "/api/wow/data/character/classes"</pre></div><div class="section" title="Guild Rewards"><div class="titlepage"><div><div><h3 class="title"><a name="id3775352"></a>Guild Rewards</h3></div></div></div><p>The guild rewards data API provides a list of all guild
+        rewards.</p><pre class="programlisting">URL = "/api/wow/data/guild/rewards"</pre></div><div class="section" title="Guild Perks"><div class="titlepage"><div><div><h3 class="title"><a name="id3775369"></a>Guild Perks</h3></div></div></div><p>The guild perks data API provides a list of all guild
+        perks.</p><pre class="programlisting">URL = "/api/wow/data/guild/perks"</pre></div><div class="section" title="Items"><div class="titlepage"><div><div><h3 class="title"><a name="id3775385"></a>Items</h3></div></div></div><p>The items data API provides detailed item information.</p><pre class="programlisting">URL = "/api/wow/data/item/" + ItemId</pre><div class="example"><a name="id3775401"></a><p class="title"><b>Example 2.19. An example item data API request and response</b></p><div class="example-contents"><pre class="programlisting">GET /api/wow/data/item/38268 HTTP/1.1
+Host: us.battle.net
+&lt;http headers&gt;</pre><pre class="programlisting">HTTP/1.1 200 OK
+&lt;http headers&gt;
+
+{
+  "id":38268,
+  "disenchantingSkillRank":-1,
+  "description":"Give to a Friend",
+  "name":"Spare Hand",
+  "stackable":1,
+  "itemBind":{
+    "id":0
+  },
+  "bonusStats":[],
+  "itemSpells":[],
+  "buyPrice":12,
+  "itemClass":{
+    "class":2,
+    "name":"Weapon"
+  },
+  "itemSubClass":{
+    "subclassId":14,
+    "name":"Miscellaneous"
+  },
+  "containerSlots":0,
+  "weaponInfo":{
+    "damage":[
+      {
+        "minDamage":1,
+        "maxDamage":2
+      }
+    ],
+    "weaponSpeed":2.5,
+    "dps":0.6
+  },
+  "inventoryType":13,
+  "equippable":true,
+  "itemLevel":1,
+  "maxCount":0,
+  "maxDurability":16,
+  "minFactionId":0,
+  "minReputation":0,
+  "quality":0,
+  "sellPrice":2,
+  "requiredLevel":70,
+  "requiredSkill":0,
+  "requiredSkillRank":0,
+  "itemSource":{
+    "sourceId":0,
+    "sourceType":"NONE"
+  },
+  "baseArmor":0,
+  "hasSockets":false,
+  "isAuctionable":true
+}</pre></div></div><br class="example-break"></div></div></div><div class="chapter" title="Chapter 3. Policies and Best Practices"><div class="titlepage"><div><div><h2 class="title"><a name="id3775434"></a>Chapter 3. Policies and Best Practices</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#id3775447">Caching</a></span></dt><dt><span class="section"><a href="#id3775469">Throttling</a></span></dt><dt><span class="section"><a href="#id3775508">Support</a></span></dt></dl></div><p>This chapter will outline API policies and best practices when
+    interacting with the API.</p><div class="section" title="Caching"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3775447"></a>Caching</h2></div></div></div><p>Caching policies should be used by client developers and API
       consumers.</p><p>Provide some example caching timelines for the documented
       resources.</p><p class="remark"><i><span class="remark">NKG: Developers are encouraged to use a 2 week cache window
-      unless user activity indicates that data needs to be refreshed.</span></i></p></div><div class="section" title="Throttling"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3486960"></a>Throttling</h2></div></div></div><p>Throttling is something that is important to healthy communities.
+      unless user activity indicates that data needs to be refreshed.</span></i></p></div><div class="section" title="Throttling"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3775469"></a>Throttling</h2></div></div></div><p>Throttling is something that is important to healthy communities.
       In a perfect world, there would be no throttles or limitations of how
       much data could be fetched and how often, but unfortunately we don't
       live in such a world. Programs have bugs, hackers launch denial of
@@ -1021,7 +1076,9 @@ Host: us.battle.net
       that ceiling, any further requests will be denied and you should
       failoever to stale data or queuing requests for the next day. Registered
       applications, as described in the first chapter of this documentation,
-      are afforded a larger number of requests.</p><p class="remark"><i><span class="remark">NKG: Fill in example error response</span></i></p></div><div class="section" title="Support"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3486999"></a>Support</h2></div></div></div><p>Use the forums for your questions and feedback.</p><p>You can also email api-support@blizzard.com for matters that you
-      may not want public discussion of</p></div></div><div class="article" title="API Changes"><div class="titlepage"><div><div><h2 class="title"><a name="id3487017"></a>API Changes</h2></div></div><hr></div><div class="revhistory"><table border="0" width="100%" summary="Revision history"><tr><th align="left" valign="top" colspan="3"><b>Revision History</b></th></tr><tr><td align="left"></td><td align="left">2011-06-2011</td><td align="left"> </td></tr><tr><td align="left" colspan="3">
+      are afforded a larger number of requests.</p><p class="remark"><i><span class="remark">NKG: Fill in example error response</span></i></p></div><div class="section" title="Support"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3775508"></a>Support</h2></div></div></div><p>Use the forums for your questions and feedback. We currently
+      maintain a developer community forum as part of the US World of Warcraft
+      community site.</p><div class="address"><p><a class="ulink" href="http://us.battle.net/wow/en/forum/2626217/" target="_top">http://us.battle.net/wow/en/forum/2626217/</a></p></div><p>You can also email api-support@blizzard.com for matters that you
+      may not want public discussion of.</p></div></div><div class="article" title="API Changes"><div class="titlepage"><div><div><h2 class="title"><a name="id3775536"></a>API Changes</h2></div></div><hr></div><div class="revhistory"><table border="0" width="100%" summary="Revision history"><tr><th align="left" valign="top" colspan="3"><b>Revision History</b></th></tr><tr><td align="left"></td><td align="left">10-06-2011</td><td align="left"> </td></tr><tr><td align="left" colspan="3">
           <p>Initial draft</p>
         </td></tr></table></div></div></div></body></html>
