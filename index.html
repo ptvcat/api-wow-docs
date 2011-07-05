@@ -1,15 +1,15 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Blizzard Community Platform API Documentation</title><link rel="stylesheet" href="style.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.75.2"><meta name="description" content="This is the documentation for the RESTful APIs exposed through the World of Warcraft community site as a service to the World of Warcraft community."></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="book" title="Blizzard Community Platform API Documentation"><div class="titlepage"><div><div><h1 class="title"><a name="id3413283"></a>Blizzard Community Platform API Documentation</h1></div><div><div class="author"><h3 class="author">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Blizzard Community Platform API Documentation</title><link rel="stylesheet" href="style.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.75.2"><meta name="description" content="This is the documentation for the RESTful APIs exposed through the World of Warcraft community site as a service to the World of Warcraft community."></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="book" title="Blizzard Community Platform API Documentation"><div class="titlepage"><div><div><h1 class="title"><a name="id3524532"></a>Blizzard Community Platform API Documentation</h1></div><div><div class="author"><h3 class="author">
       <span class="orgname">Blizzard Entertainment</span>
 
       <code class="email">&lt;<a class="email" href="mailto:api-support@blizzard.com">api-support@blizzard.com</a>&gt;</code>
-    </h3><code class="email">&lt;<a class="email" href="mailto:api-support@blizzard.com">api-support@blizzard.com</a>&gt;</code></div></div><div><p class="pubdate">6/10/2011</p></div><div><div class="abstract" title="Abstract"><p class="title"><b>Abstract</b></p>
+    </h3><code class="email">&lt;<a class="email" href="mailto:api-support@blizzard.com">api-support@blizzard.com</a>&gt;</code></div></div><div><p class="pubdate">7/5/2011</p></div><div><div class="abstract" title="Abstract"><p class="title"><b>Abstract</b></p>
       <p>This is the documentation for the RESTful APIs exposed through the
       World of Warcraft community site as a service to the World of Warcraft
       community.</p>
-    </div></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="preface"><a href="#id3413340">Introduction</a></span></dt><dt><span class="chapter"><a href="#id3413224">1. Features</a></span></dt><dd><dl><dt><span class="section"><a href="#id3413348">REST</a></span></dt><dt><span class="section"><a href="#id3413365">Access and Regions</a></span></dt><dt><span class="section"><a href="#id3413529">Throttling</a></span></dt><dt><span class="section"><a href="#id3413545">Authentication</a></span></dt><dd><dl><dt><span class="section"><a href="#id3413566">Application Registration</a></span></dt><dt><span class="section"><a href="#id3413610">Authentication Process</a></span></dt></dl></dd><dt><span class="section"><a href="#id3413683">Formats and Protocols</a></span></dt><dt><span class="section"><a href="#id3413696">Error Handling</a></span></dt><dt><span class="section"><a href="#id3413886">Support</a></span></dt></dl></dd><dt><span class="chapter"><a href="#id3413916">2. API Reference</a></span></dt><dd><dl><dt><span class="section"><a href="#id3413923">Character Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3413935">Profile</a></span></dt></dl></dd><dt><span class="section"><a href="#id3414716">Guild Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3414726">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#id3415087">Realm Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3415097">Realm Status</a></span></dt></dl></dd><dt><span class="section"><a href="#id3415149">Data Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3415162">Character Races</a></span></dt><dt><span class="section"><a href="#id3415179">Character Classes</a></span></dt><dt><span class="section"><a href="#id3415196">Guild Rewards</a></span></dt><dt><span class="section"><a href="#id3415212">Guild Perks</a></span></dt><dt><span class="section"><a href="#id3415229">Items</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="#id3415278">3. API Policy</a></span></dt></dl></div>
+    </div></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="preface"><a href="#id3524589">Introduction</a></span></dt><dt><span class="chapter"><a href="#id3524473">1. Features</a></span></dt><dd><dl><dt><span class="section"><a href="#id3524597">REST</a></span></dt><dt><span class="section"><a href="#id3524711">Access and Regions</a></span></dt><dt><span class="section"><a href="#id3524773">Throttling</a></span></dt><dt><span class="section"><a href="#id3524790">Authentication</a></span></dt><dd><dl><dt><span class="section"><a href="#id3524811">Application Registration</a></span></dt><dt><span class="section"><a href="#id3524857">Authentication Process</a></span></dt></dl></dd><dt><span class="section"><a href="#id3524939">Formats and Protocols</a></span></dt><dt><span class="section"><a href="#id3524952">Error Handling</a></span></dt><dt><span class="section"><a href="#id3525174">Support</a></span></dt></dl></dd><dt><span class="chapter"><a href="#id3525205">2. API Reference</a></span></dt><dd><dl><dt><span class="section"><a href="#id3525212">Character Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3525224">Profile</a></span></dt></dl></dd><dt><span class="section"><a href="#id3526363">Guild Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3526372">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#id3526736">Realm Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3526745">Realm Status</a></span></dt></dl></dd><dt><span class="section"><a href="#id3526800">Data Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3526812">Character Races</a></span></dt><dt><span class="section"><a href="#id3526828">Character Classes</a></span></dt><dt><span class="section"><a href="#id3526845">Guild Rewards</a></span></dt><dt><span class="section"><a href="#id3526861">Guild Perks</a></span></dt><dt><span class="section"><a href="#id3526878">Items</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="#id3526927">3. API Policy</a></span></dt><dt><span class="chapter"><a href="#id3526940">4. Frequently Asked Questions</a></span></dt></dl></div>
   
 
-  <div class="preface" title="Introduction"><div class="titlepage"><div><div><h2 class="title"><a name="id3413340"></a>Introduction</h2></div></div></div>
+  <div class="preface" title="Introduction"><div class="titlepage"><div><div><h2 class="title"><a name="id3524589"></a>Introduction</h2></div></div></div>
     
 
     <p>The Blizzard Community Platform API provides a number of resources
@@ -23,7 +23,7 @@
     communities to continue that epic experience.</p>
   </div>
 
-  <div class="chapter" title="Chapter 1. Features"><div class="titlepage"><div><div><h2 class="title"><a name="id3413224"></a>Chapter 1. Features</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#id3413348">REST</a></span></dt><dt><span class="section"><a href="#id3413365">Access and Regions</a></span></dt><dt><span class="section"><a href="#id3413529">Throttling</a></span></dt><dt><span class="section"><a href="#id3413545">Authentication</a></span></dt><dd><dl><dt><span class="section"><a href="#id3413566">Application Registration</a></span></dt><dt><span class="section"><a href="#id3413610">Authentication Process</a></span></dt></dl></dd><dt><span class="section"><a href="#id3413683">Formats and Protocols</a></span></dt><dt><span class="section"><a href="#id3413696">Error Handling</a></span></dt><dt><span class="section"><a href="#id3413886">Support</a></span></dt></dl></div>
+  <div class="chapter" title="Chapter 1. Features"><div class="titlepage"><div><div><h2 class="title"><a name="id3524473"></a>Chapter 1. Features</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#id3524597">REST</a></span></dt><dt><span class="section"><a href="#id3524711">Access and Regions</a></span></dt><dt><span class="section"><a href="#id3524773">Throttling</a></span></dt><dt><span class="section"><a href="#id3524790">Authentication</a></span></dt><dd><dl><dt><span class="section"><a href="#id3524811">Application Registration</a></span></dt><dt><span class="section"><a href="#id3524857">Authentication Process</a></span></dt></dl></dd><dt><span class="section"><a href="#id3524939">Formats and Protocols</a></span></dt><dt><span class="section"><a href="#id3524952">Error Handling</a></span></dt><dt><span class="section"><a href="#id3525174">Support</a></span></dt></dl></div>
     
 
     <p>Before getting started with the Community Platform API, programmers
@@ -32,22 +32,25 @@
     API. It is recommended that the reader have knowledge of the HTTP protocol
     as well as a general understanding of web technologies.</p>
 
-    <div class="section" title="REST"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3413348"></a>REST</h2></div></div></div>
+    <div class="section" title="REST"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3524597"></a>REST</h2></div></div></div>
       
 
       <p>The API is <span class="emphasis"><em>mostly</em></span> RESTful. Data is exposed in
       the form of URIs that represent resources and can be fetched with HTTP
-      clients (like web browsers). At this time, the the API is limited to
+      clients (like web browsers). At this time, the API is limited to
       read-only operations.</p>
+
+      <p>The character and guild API resources do honor HTTP requests that
+      contain the "Last-Modified" header.</p>
     </div>
 
-    <div class="section" title="Access and Regions"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3413365"></a>Access and Regions</h2></div></div></div>
+    <div class="section" title="Access and Regions"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3524711"></a>Access and Regions</h2></div></div></div>
       
 
       <p>To access the API, HTTP requests can be made to specific URLs and
       resources exposed on the regional Battle.net domains.</p>
 
-      <div class="example"><a name="id3413469"></a><p class="title"><b>Example 1.1. An example API request and response.</b></p><div class="example-contents">
+      <div class="example"><a name="id3524539"></a><p class="title"><b>Example 1.1. An example API request and response.</b></p><div class="example-contents">
         
 
         <pre class="programlisting">GET /api/wow/realm/status HTTP/1.1
@@ -68,8 +71,6 @@ Host: us.battle.net
             <p>kr.battle.net</p>
           </li><li class="listitem">
             <p>tw.battle.net</p>
-          </li><li class="listitem">
-            <p>battlenet.com.cn</p>
           </li></ul></div>
 
       <p>The data available through the API is limited to the region that
@@ -79,7 +80,7 @@ Host: us.battle.net
       sites.</p>
     </div>
 
-    <div class="section" title="Throttling"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3413529"></a>Throttling</h2></div></div></div>
+    <div class="section" title="Throttling"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3524773"></a>Throttling</h2></div></div></div>
       
 
       <p>Consumers of the API can make a limited number of requests per
@@ -90,7 +91,7 @@ Host: us.battle.net
       available to registered applications.</p>
     </div>
 
-    <div class="section" title="Authentication"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3413545"></a>Authentication</h2></div></div></div>
+    <div class="section" title="Authentication"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3524790"></a>Authentication</h2></div></div></div>
       
 
       <p>Although most of the application can be accessed without any form
@@ -99,10 +100,10 @@ Host: us.battle.net
       including an application identifier and a request signature and
       including those values with the request headers.</p>
 
-      <p>The primary benifit to making requests as an authenticated
+      <p>The primary benefit to making requests as an authenticated
       application is that you can make more requests per day.</p>
 
-      <div class="section" title="Application Registration"><div class="titlepage"><div><div><h3 class="title"><a name="id3413566"></a>Application Registration</h3></div></div></div>
+      <div class="section" title="Application Registration"><div class="titlepage"><div><div><h3 class="title"><a name="id3524811"></a>Application Registration</h3></div></div></div>
         
 
         <p>To send authenticated request you first need to register an
@@ -121,17 +122,19 @@ Host: us.battle.net
         <p>Registering an application is a matter of providing a
         description of the application, how you plan on using the API and your
         contact information to <code class="email">&lt;<a class="email" href="mailto:api-support@blizzard.com">api-support@blizzard.com</a>&gt;</code> with
-        the subject "Application Registration Request".</p>
+        the subject "Application Registration Request". Once we receive your
+        request, we will contact you to either provide additional information
+        or with application keys to use.</p>
       </div>
 
-      <div class="section" title="Authentication Process"><div class="titlepage"><div><div><h3 class="title"><a name="id3413610"></a>Authentication Process</h3></div></div></div>
+      <div class="section" title="Authentication Process"><div class="titlepage"><div><div><h3 class="title"><a name="id3524857"></a>Authentication Process</h3></div></div></div>
         
 
-        <p>To authentice a request, simple include the "Authorization"
+        <p>To authenticate a request, simple include the "Authorization"
         header with your application identifier and the request
         signature.</p>
 
-        <div class="example"><a name="id3413621"></a><p class="title"><b>Example 1.2. An example authenticated request</b></p><div class="example-contents">
+        <div class="example"><a name="id3524869"></a><p class="title"><b>Example 1.2. An example authenticated request</b></p><div class="example-contents">
           
 
           <pre class="programlisting">GET /api/wow/character/Medivh/Thrall HTTP/1.1
@@ -149,32 +152,38 @@ Authorization: <code class="computeroutput">BNET</code> <code class="computerout
         application registration process. The signature is generated with each
         request and is discribed by the following algorithm.</p>
 
-        <pre class="programlisting">Authorization = "BNET" + " " + PublicKey + ":" + Signature;
-
-Signature = Base64( HMAC-SHA1( UTF-8-Encoding-Of( PrivateKey, StringToSign ) ) );
+        <pre class="programlisting">UrlPath = &lt;HTTP-Request-URI, from the port to the query string&gt;
 
 StringToSign = HTTP-Verb + "\n" +
     Date + "\n" +
     UrlPath + "\n";
 
-UrlPath = &lt;HTTP-Request-URI, from the port to the query string&gt;</pre>
+Signature = Base64( HMAC-SHA1( UTF-8-Encoding-Of( PrivateKey, StringToSign ) ) );
+
+Authorization = "BNET" + " " + PublicKey + ":" + Signature;</pre>
 
         <p>The above process can be seen in action by filling in the
         blanks:</p>
 
-        <pre class="programlisting">Authorization = "BNET" + " " + "examplekey" + ":" + Signature;
-
-Signature = Base64( HMAC-SHA1( UTF-8-Encoding-Of( "examplesecret", StringToSign ) ) );
+        <pre class="programlisting">UrlPath = "/api/wow/realm/status"
 
 StringToSign = "GET" + "\n" +
     "Fri, 10 Jun 2011 21:37:34 GMT" + "\n" +
     UrlPath + "\n";
 
-UrlPath = "/api/wow/realm/status"</pre>
+Signature = Base64( HMAC-SHA1( UTF-8-Encoding-Of( "examplesecret" ), StringToSign ) );
+
+Authorization = "BNET" + " " + "examplekey" + ":" + Signature;</pre>
+
+        <p>The date timestamp used in the above algorithm and example is
+        the value of the Date HTTP header. The two date values, the first
+        being used to sign the request and the second as sent with the request
+        headers, must be the same and within 15 seconds of the current GMT
+        time.</p>
       </div>
     </div>
 
-    <div class="section" title="Formats and Protocols"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3413683"></a>Formats and Protocols</h2></div></div></div>
+    <div class="section" title="Formats and Protocols"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3524939"></a>Formats and Protocols</h2></div></div></div>
       
 
       <p>Data returned in the response message is provided in JSON format.
@@ -182,7 +191,7 @@ UrlPath = "/api/wow/realm/status"</pre>
       additional information.</p>
     </div>
 
-    <div class="section" title="Error Handling"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3413696"></a>Error Handling</h2></div></div></div>
+    <div class="section" title="Error Handling"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3524952"></a>Error Handling</h2></div></div></div>
       
 
       <p>Although several of the API resources have specific error
@@ -196,34 +205,50 @@ UrlPath = "/api/wow/realm/status"</pre>
       following strings.</p>
 
       <div class="variablelist"><dl><dt><span class="term">Invalid Application</span></dt><dd>
+            <p>HTTP Response Code: 500</p>
+
             <p>A request was made including application identification
             information, but either the application key is invalid or
             missing.</p>
           </dd><dt><span class="term">Invalid application permissions.</span></dt><dd>
+            <p>HTTP Response Code: 500</p>
+
             <p>A request was made to an API resource that requires a higher
             application permission level.</p>
           </dd><dt><span class="term">Access denied, please contact api-support@blizzard.com</span></dt><dd>
+            <p>HTTP Response Code: 500</p>
+
             <p>The application or IP address has been blocked from making
             further requests. This ban may not be permanent.</p>
           </dd><dt><span class="term">When in doubt, blow it up. (page not found)</span></dt><dd>
+            <p>HTTP Response Code: 404</p>
+
             <p>A request was made to a resource that doesn't exist.</p>
           </dd><dt><span class="term">If at first you don't succeed, blow it up again. (too many
           requests)</span></dt><dd>
+            <p>HTTP Response Code: 500</p>
+
             <p>The application or IP has been throttled.</p>
           </dd><dt><span class="term">Have you not been through enough? Will you continue to fight
           what you cannot defeat? (something unexpected happened)</span></dt><dd>
+            <p>HTTP Response Code: 500</p>
+
             <p>There was a server error or equally catastrophic exception
             preventing the request from being fulfilled.</p>
           </dd><dt><span class="term">Invalid authentication header.</span></dt><dd>
+            <p>HTTP Response Code: 500</p>
+
             <p>The application authorization information was mallformed or
             missing when expected.</p>
           </dd><dt><span class="term">Invalid application signature.</span></dt><dd>
+            <p>HTTP Response Code: 500</p>
+
             <p>The application request signature was missing or invalid.
             This will also be thrown if the request date outside of a 15
             second window from the current GMT time.</p>
           </dd></dl></div>
 
-      <div class="example"><a name="id3413868"></a><p class="title"><b>Example 1.3. An example API request and and error response</b></p><div class="example-contents">
+      <div class="example"><a name="id3525156"></a><p class="title"><b>Example 1.3. An example API request and and error response</b></p><div class="example-contents">
         
 
         <pre class="programlisting">GET /api/wow/data/boss/45 HTTP/1.1
@@ -237,7 +262,7 @@ Host: us.battle.net
       </div></div><br class="example-break">
     </div>
 
-    <div class="section" title="Support"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3413886"></a>Support</h2></div></div></div>
+    <div class="section" title="Support"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3525174"></a>Support</h2></div></div></div>
       
 
       <p>For questions about the API, please use the Community Platform API
@@ -250,16 +275,16 @@ Host: us.battle.net
     </div>
   </div>
 
-  <div class="chapter" title="Chapter 2. API Reference"><div class="titlepage"><div><div><h2 class="title"><a name="id3413916"></a>Chapter 2. API Reference</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#id3413923">Character Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3413935">Profile</a></span></dt></dl></dd><dt><span class="section"><a href="#id3414716">Guild Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3414726">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#id3415087">Realm Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3415097">Realm Status</a></span></dt></dl></dd><dt><span class="section"><a href="#id3415149">Data Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3415162">Character Races</a></span></dt><dt><span class="section"><a href="#id3415179">Character Classes</a></span></dt><dt><span class="section"><a href="#id3415196">Guild Rewards</a></span></dt><dt><span class="section"><a href="#id3415212">Guild Perks</a></span></dt><dt><span class="section"><a href="#id3415229">Items</a></span></dt></dl></dd></dl></div>
+  <div class="chapter" title="Chapter 2. API Reference"><div class="titlepage"><div><div><h2 class="title"><a name="id3525205"></a>Chapter 2. API Reference</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#id3525212">Character Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3525224">Profile</a></span></dt></dl></dd><dt><span class="section"><a href="#id3526363">Guild Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3526372">Profile API</a></span></dt></dl></dd><dt><span class="section"><a href="#id3526736">Realm Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3526745">Realm Status</a></span></dt></dl></dd><dt><span class="section"><a href="#id3526800">Data Resources</a></span></dt><dd><dl><dt><span class="section"><a href="#id3526812">Character Races</a></span></dt><dt><span class="section"><a href="#id3526828">Character Classes</a></span></dt><dt><span class="section"><a href="#id3526845">Guild Rewards</a></span></dt><dt><span class="section"><a href="#id3526861">Guild Perks</a></span></dt><dt><span class="section"><a href="#id3526878">Items</a></span></dt></dl></dd></dl></div>
     
 
-    <div class="section" title="Character Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3413923"></a>Character Resources</h2></div></div></div>
+    <div class="section" title="Character Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3525212"></a>Character Resources</h2></div></div></div>
       
 
       <p>Character APIs currently provide character profile
       information.</p>
 
-      <div class="section" title="Profile"><div class="titlepage"><div><div><h3 class="title"><a name="id3413935"></a>Profile</h3></div></div></div>
+      <div class="section" title="Profile"><div class="titlepage"><div><div><h3 class="title"><a name="id3525224"></a>Profile</h3></div></div></div>
         
 
         <p>The Character Profile API is the primary way to access character
@@ -280,7 +305,7 @@ Realm = &lt;proper realm name&gt; | &lt;normalized realm name&gt;</pre>
         optional datasets is to be retrieved. Those additional fields are
         listed in the subsection titled "Optional Fields".</p>
 
-        <div class="example"><a name="id3413972"></a><p class="title"><b>Example 2.1. An example Character Profile API request and
+        <div class="example"><a name="id3525262"></a><p class="title"><b>Example 2.1. An example Character Profile API request and
           response.</b></p><div class="example-contents">
           
 
@@ -298,7 +323,7 @@ Host: us.battle.net</pre>
         level, last modified timestamp, thumbnail, race id, achievement points
         value, gender id and class id.</p>
 
-        <div class="section" title="Optional Fields"><div class="titlepage"><div><div><h4 class="title"><a name="id3414001"></a>Optional Fields</h4></div></div></div>
+        <div class="section" title="Optional Fields"><div class="titlepage"><div><div><h4 class="title"><a name="id3525290"></a>Optional Fields</h4></div></div></div>
           
 
           <p>This section contains a list of the optional fields that can
@@ -340,9 +365,15 @@ Host: us.battle.net</pre>
               </dd><dt><span class="term">pets</span></dt><dd>
                 <p>A list of all of the combat pets obtained by the
                 character.</p>
+              </dd><dt><span class="term">achievements</span></dt><dd>
+                <p>A map of achievement data including completion
+                timestamps and criteria information.</p>
+              </dd><dt><span class="term">progression</span></dt><dd>
+                <p>A list of raids and bosses indicating raid progression
+                and completedness.</p>
               </dd></dl></div>
 
-          <div class="example"><a name="id3414222"></a><p class="title"><b>Example 2.2. An example Character Profile request with several addtional
+          <div class="example"><a name="id3525547"></a><p class="title"><b>Example 2.2. An example Character Profile request with several addtional
             fields.</b></p><div class="example-contents">
             
 
@@ -350,7 +381,7 @@ Host: us.battle.net</pre>
 Host: us.battle.net</pre>
           </div></div><br class="example-break">
 
-          <div class="section" title="guild"><div class="titlepage"><div><div><h5 class="title"><a name="id3414236"></a>guild</h5></div></div></div>
+          <div class="section" title="guild"><div class="titlepage"><div><div><h5 class="title"><a name="id3525560"></a>guild</h5></div></div></div>
             
 
             <p>When a guild is requested, a map is returned with key/value
@@ -360,7 +391,7 @@ Host: us.battle.net</pre>
             the character's rank within the guild, you must specific a
             seperate request to the guild profile resource.</p>
 
-            <div class="example"><a name="id3414254"></a><p class="title"><b>Example 2.3. An example guild on Medivh</b></p><div class="example-contents">
+            <div class="example"><a name="id3525578"></a><p class="title"><b>Example 2.3. An example guild on Medivh</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -382,233 +413,176 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="items"><div class="titlepage"><div><div><h5 class="title"><a name="id3414275"></a>items</h5></div></div></div>
+          <div class="section" title="items"><div class="titlepage"><div><div><h5 class="title"><a name="id3525599"></a>items</h5></div></div></div>
             
 
             <p>When the items field is used, a map structure is returned
             that contains information on the equipped items of that character
             as well as the average item level of the character.</p>
 
-            <div class="example"><a name="id3414289"></a><p class="title"><b>Example 2.4. An example items field</b></p><div class="example-contents">
+            <div class="example"><a name="id3525612"></a><p class="title"><b>Example 2.4. An example items field</b></p><div class="example-contents">
               
 
-              <pre class="programlisting">{
-  "items":{
-    "averageItemLevel":361,
-    "averageItemLevelEquipped":359,
-    "head":{
-      "id":63531,
-      "name":"Daybreaker Helm",
-      "icon":"inv_helmet_plate_raiddeathknight_i_01",
-      "quality":4,
-      "tooltipParams":{
-        "gem0":1813,
-        "gem1":1762,
-        "enchant":4206,
-        "reforge":128
-      }
-    },
-    "neck":{
-      "id":59319,
-      "name":"Ironstar Amulet",
-      "icon":"inv_misc_necklacea3",
-      "quality":4,
-      "tooltipParams":{
-        "reforge":140
-      }
-    },
-    "shoulder":{
-      "id":59901,
-      "name":"Heaving Plates of Protection",
-      "icon":"inv_shoulder_92",
-      "quality":4,
-      "tooltipParams":{
-        "gem0":1785,
-        "enchant":4198,
-        "reforge":128
-      }
-    },
-    "back":{
-      "id":62383,
-      "name":"Wrap of the Great Turtle",
-      "icon":"inv_misc_cape_cataclysm_tank_d_01",
-      "quality":4,
-      "tooltipParams":{
-        "enchant":4090
-      }
-    },
-    "chest":{
-      "id":60354,
-      "name":"Reinforced Sapphirium Chestguard",
-      "icon":"inv_chest_plate_raidpaladin_i_01",
-      "quality":4,
-      "tooltipParams":{
-        "gem0":1758,
-        "gem1":1785,
-        "enchant":4070,
-        "set":[
-          60355,
-          60357,
-          60354
-        ],
-        "reforge":128
-      }
-    },
-    "tabard":{
-      "id":5976,
-      "name":"Guild Tabard",
-      "icon":"inv_shirt_guildtabard_01",
-      "quality":1,
-      "tooltipParams":{
-
-      }
-    },
-    "wrist":{
-      "id":62449,
-      "name":"Sandguard Bracers",
-      "icon":"inv_bracer_plate_raidwarrior_i_01",
-      "quality":4,
-      "tooltipParams":{
-        "gem0":1774,
-        "enchant":4086,
-        "extraSocket":true,
-        "reforge":161
-      }
-    },
-    "hands":{
-      "id":60355,
-      "name":"Reinforced Sapphirium Handguards",
-      "icon":"inv_gauntlets_plate_raidpaladin_i_01",
-      "quality":4,
-      "tooltipParams":{
-        "gem0":1800,
-        "gem1":1774,
-        "enchant":4061,
-        "set":[
-          60355,
-          60357,
-          60354
-        ],
-        "extraSocket":true,
-        "reforge":128
-      }
-    },
-    "waist":{
-      "id":63491,
-      "name":"Thunder Wall Belt of the Rockslab",
-      "icon":"inv_belt_plate_raidwarrior_i_01",
-      "quality":4,
-      "tooltipParams":{
-        "gem0":1758,
-        "gem1":1808,
-        "suffix":-209,
-        "extraSocket":true
-      }
-    },
-    "legs":{
-      "id":60357,
-      "name":"Reinforced Sapphirium Legguards",
-      "icon":"inv_pants_plate_raidpaladin_i_01",
-      "quality":4,
-      "tooltipParams":{
-        "gem0":1758,
-        "gem1":1774,
-        "enchant":4124,
-        "set":[
-          60355,
-          60357,
-          60354
-        ],
-        "reforge":133
-      }
-    },
-    "feet":{
-      "id":65075,
-      "name":"Massacre Treads",
-      "icon":"inv_boots_raidwarrior_i_01",
-      "quality":4,
-      "tooltipParams":{
-        "gem0":1774,
-        "enchant":4094
-      }
-    },
-    "finger1":{
-      "id":63489,
-      "name":"Permafrost Signet of the Bedrock",
-      "icon":"inv_jewelry_ring_86",
-      "quality":4,
-      "tooltipParams":{
-        "suffix":-125,
-        "seed":1977024874,
-        "reforge":128
-      }
-    },
-    "finger2":{
-      "id":58187,
-      "name":"Ring of the Battle Anthem",
-      "icon":"inv_jewelry_ring_82",
-      "quality":4,
-      "tooltipParams":{
-
-      }
-    },
-    "trinket1":{
-      "id":62471,
-      "name":"Mirror of Broken Images",
-      "icon":"inv_misc_platnumdisks",
-      "quality":4,
-      "tooltipParams":{
-
-      }
-    },
-    "trinket2":{
-      "id":59515,
-      "name":"Vial of Stolen Memories",
-      "icon":"inv_misc_cat_trinket02",
-      "quality":4,
-      "tooltipParams":{
-
-      }
-    },
-    "mainHand":{
-      "id":59347,
-      "name":"Mace of Acrid Death",
-      "icon":"inv_mace_1h_bwdraid_d_01",
-      "quality":4,
-      "tooltipParams":{
-        "enchant":4098,
-        "reforge":128
-      }
-    },
-    "offHand":{
-      "id":67145,
-      "name":"Blockade's Lost Shield",
-      "icon":"inv_shield_grimbatolraid_d_01",
-      "quality":4,
-      "tooltipParams":{
-        "enchant":4085,
-        "reforge":128
-      }
-    },
-    "ranged":{
-      "id":64676,
-      "name":"Relic of Khaz'goroth",
-      "icon":"inv_misc_stonetablet_03",
-      "quality":4,
-      "tooltipParams":{
-        "gem0":1808
-      }
-    }
-  }
-}
-</pre>
+              <pre class="programlisting">{ "items" : { "averageItemLevel" : 353,
+      "averageItemLevelEquipped" : 335,
+      "back" : { "icon" : "inv_misc_cape_naxxramas_01",
+          "id" : 56450,
+          "name" : "Azureborne Cloak",
+          "quality" : 3,
+          "tooltipParams" : {  }
+        },
+      "chest" : { "icon" : "inv_chest_robe_pvppriest_c_01",
+          "id" : 60476,
+          "name" : "Vicious Gladiator's Satin Robe",
+          "quality" : 4,
+          "tooltipParams" : { "enchant" : 4077,
+              "gem0" : 52207,
+              "gem1" : 52226,
+              "set" : [ 60474,
+                  60476,
+                  60477,
+                  60475,
+                  60473
+                ]
+            }
+        },
+      "feet" : { "icon" : "inv_boots_robe_dungeonrobe_c_03",
+          "id" : 63440,
+          "name" : "Boots of Lingering Sorrow",
+          "quality" : 3,
+          "tooltipParams" : { "gem0" : 52117 }
+        },
+      "finger1" : { "icon" : "inv_jewelry_ring_68",
+          "id" : 56333,
+          "name" : "Rose Quartz Band",
+          "quality" : 3,
+          "tooltipParams" : {  }
+        },
+      "finger2" : { "icon" : "inv_jewelry_ring_75",
+          "id" : 56418,
+          "name" : "Band of Life Energy",
+          "quality" : 3,
+          "tooltipParams" : {  }
+        },
+      "hands" : { "icon" : "inv_gauntlets_robe_pvppriest_c_01",
+          "id" : 60473,
+          "name" : "Vicious Gladiator's Satin Gloves",
+          "quality" : 4,
+          "tooltipParams" : { "enchant" : 4068,
+              "gem0" : 52245,
+              "set" : [ 60474,
+                  60476,
+                  60477,
+                  60475,
+                  60473
+                ]
+            }
+        },
+      "head" : { "icon" : "inv_helm_robe_pvppriest_c_01",
+          "id" : 60474,
+          "name" : "Vicious Gladiator's Satin Hood",
+          "quality" : 4,
+          "tooltipParams" : { "enchant" : 4207,
+              "gem0" : 52296,
+              "gem1" : 52207,
+              "set" : [ 60474,
+                  60476,
+                  60477,
+                  60475,
+                  60473
+                ]
+            }
+        },
+      "legs" : { "icon" : "inv_pants_robe_pvppriest_c_01",
+          "id" : 60475,
+          "name" : "Vicious Gladiator's Satin Leggings",
+          "quality" : 4,
+          "tooltipParams" : { "enchant" : 4112,
+              "gem0" : 52207,
+              "gem1" : 52245,
+              "set" : [ 60474,
+                  60476,
+                  60477,
+                  60475,
+                  60473
+                ]
+            }
+        },
+      "mainHand" : { "icon" : "inv_staff_13",
+          "id" : 65167,
+          "name" : "Emberstone Staff",
+          "quality" : 3,
+          "tooltipParams" : {  }
+        },
+      "neck" : { "icon" : "inv_jewelry_necklace_44",
+          "id" : 70075,
+          "name" : "Bloodthirsty Amberjewel Pendant",
+          "quality" : 3,
+          "tooltipParams" : {  }
+        },
+      "ranged" : { "icon" : "inv_wand_1h_cataclysm_b_01",
+          "id" : 63735,
+          "name" : "Darklight Torch",
+          "quality" : 2,
+          "tooltipParams" : {  }
+        },
+      "shirt" : { "icon" : "inv_shirt_purple_01",
+          "id" : 45037,
+          "name" : "Epic Purple Shirt",
+          "quality" : 4,
+          "tooltipParams" : {  }
+        },
+      "shoulder" : { "icon" : "inv_shoulder_robe_pvppriest_c_01",
+          "id" : 60477,
+          "name" : "Vicious Gladiator's Satin Mantle",
+          "quality" : 4,
+          "tooltipParams" : { "gem0" : 52226,
+              "set" : [ 60474,
+                  60476,
+                  60477,
+                  60475,
+                  60473
+                ]
+            }
+        },
+      "tabard" : { "icon" : "inv_epicguildtabard",
+          "id" : 69210,
+          "name" : "Renowned Guild Tabard",
+          "quality" : 4,
+          "tooltipParams" : {  }
+        },
+      "trinket1" : { "icon" : "spell_shadow_lifedrain",
+          "id" : 56351,
+          "name" : "Tear of Blood",
+          "quality" : 3,
+          "tooltipParams" : {  }
+        },
+      "trinket2" : { "icon" : "inv_jewelry_trinketpvp_01",
+          "id" : 18862,
+          "name" : "Insignia of the Alliance",
+          "quality" : 3,
+          "tooltipParams" : {  }
+        },
+      "waist" : { "icon" : "inv_belt_cloth_raidpriest_i_01",
+          "id" : 62386,
+          "name" : "Cord of the Raven Queen",
+          "quality" : 4,
+          "tooltipParams" : { "gem0" : 52244 }
+        },
+      "wrist" : { "icon" : "inv_bracer_cloth_pvpwarlock_c_01",
+          "id" : 60634,
+          "name" : "Vicious Gladiator's Cuffs of Prowess",
+          "quality" : 4,
+          "tooltipParams" : {  }
+        }
+    } }</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="stats"><div class="titlepage"><div><div><h5 class="title"><a name="id3414376"></a>stats</h5></div></div></div>
+          <div class="section" title="stats"><div class="titlepage"><div><div><h5 class="title"><a name="id3525706"></a>stats</h5></div></div></div>
             
 
-            <div class="example"><a name="id3414381"></a><p class="title"><b>Example 2.5. An example stats field</b></p><div class="example-contents">
+            <div class="example"><a name="id3525712"></a><p class="title"><b>Example 2.5. An example stats field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -667,10 +641,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="talents"><div class="titlepage"><div><div><h5 class="title"><a name="id3414415"></a>talents</h5></div></div></div>
+          <div class="section" title="talents"><div class="titlepage"><div><div><h5 class="title"><a name="id3525747"></a>talents</h5></div></div></div>
             
 
-            <div class="example"><a name="id3414422"></a><p class="title"><b>Example 2.6. An example talents field</b></p><div class="example-contents">
+            <div class="example"><a name="id3525752"></a><p class="title"><b>Example 2.6. An example talents field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -844,10 +818,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="reputation"><div class="titlepage"><div><div><h5 class="title"><a name="id3414506"></a>reputation</h5></div></div></div>
+          <div class="section" title="reputation"><div class="titlepage"><div><div><h5 class="title"><a name="id3525838"></a>reputation</h5></div></div></div>
             
 
-            <div class="example"><a name="id3414512"></a><p class="title"><b>Example 2.7. An example reputation field</b></p><div class="example-contents">
+            <div class="example"><a name="id3525844"></a><p class="title"><b>Example 2.7. An example reputation field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -893,10 +867,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="titles"><div class="titlepage"><div><div><h5 class="title"><a name="id3414538"></a>titles</h5></div></div></div>
+          <div class="section" title="titles"><div class="titlepage"><div><div><h5 class="title"><a name="id3525869"></a>titles</h5></div></div></div>
             
 
-            <div class="example"><a name="id3414544"></a><p class="title"><b>Example 2.8. An example titles field</b></p><div class="example-contents">
+            <div class="example"><a name="id3525875"></a><p class="title"><b>Example 2.8. An example titles field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -948,10 +922,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="professions"><div class="titlepage"><div><div><h5 class="title"><a name="id3414571"></a>professions</h5></div></div></div>
+          <div class="section" title="professions"><div class="titlepage"><div><div><h5 class="title"><a name="id3525902"></a>professions</h5></div></div></div>
             
 
-            <div class="example"><a name="id3414553"></a><p class="title"><b>Example 2.9. An example professions field</b></p><div class="example-contents">
+            <div class="example"><a name="id3525907"></a><p class="title"><b>Example 2.9. An example professions field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -1039,10 +1013,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="appearance"><div class="titlepage"><div><div><h5 class="title"><a name="id3414618"></a>appearance</h5></div></div></div>
+          <div class="section" title="appearance"><div class="titlepage"><div><div><h5 class="title"><a name="id3525948"></a>appearance</h5></div></div></div>
             
 
-            <div class="example"><a name="id3414623"></a><p class="title"><b>Example 2.10. An example appearance field</b></p><div class="example-contents">
+            <div class="example"><a name="id3525916"></a><p class="title"><b>Example 2.10. An example appearance field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -1059,10 +1033,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="companions"><div class="titlepage"><div><div><h5 class="title"><a name="id3414644"></a>companions</h5></div></div></div>
+          <div class="section" title="companions"><div class="titlepage"><div><div><h5 class="title"><a name="id3525974"></a>companions</h5></div></div></div>
             
 
-            <div class="example"><a name="id3414649"></a><p class="title"><b>Example 2.11. An example companions field</b></p><div class="example-contents">
+            <div class="example"><a name="id3525978"></a><p class="title"><b>Example 2.11. An example companions field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -1077,10 +1051,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="mounts"><div class="titlepage"><div><div><h5 class="title"><a name="id3414667"></a>mounts</h5></div></div></div>
+          <div class="section" title="mounts"><div class="titlepage"><div><div><h5 class="title"><a name="id3525997"></a>mounts</h5></div></div></div>
             
 
-            <div class="example"><a name="id3414672"></a><p class="title"><b>Example 2.12. An example mounts field</b></p><div class="example-contents">
+            <div class="example"><a name="id3526001"></a><p class="title"><b>Example 2.12. An example mounts field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -1091,10 +1065,10 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="pets"><div class="titlepage"><div><div><h5 class="title"><a name="id3414689"></a>pets</h5></div></div></div>
+          <div class="section" title="pets"><div class="titlepage"><div><div><h5 class="title"><a name="id3526019"></a>pets</h5></div></div></div>
             
 
-            <div class="example"><a name="id3414695"></a><p class="title"><b>Example 2.13. An example pets field</b></p><div class="example-contents">
+            <div class="example"><a name="id3526025"></a><p class="title"><b>Example 2.13. An example pets field</b></p><div class="example-contents">
               
 
               <pre class="programlisting">{
@@ -1124,16 +1098,792 @@ Host: us.battle.net</pre>
 }</pre>
             </div></div><br class="example-break">
           </div>
+
+          <div class="section" title="achievements"><div class="titlepage"><div><div><h5 class="title"><a name="id3526047"></a>achievements</h5></div></div></div>
+            
+
+            <div class="example"><a name="id3526052"></a><p class="title"><b>Example 2.14. An example achievements field</b></p><div class="example-contents">
+              
+
+              <pre class="programlisting">{
+  "achievements":{
+    "achievementsCompleted":[6,7,8,9,10],
+    "achievementsCompletedTimestamp":[1224283700000,1224283700000,1224283700000,1224283700000,1224283700000],
+    "criteria":[34,35,36,37,38],
+    "criteriaQuantity":[85,85,85,85,85],
+    "criteriaTimestamp":[1309580447000,1309580447000,1309580447000,1309580447000,1309580447000],
+    "criteriaCreated":[1309580447000,1309580447000,1309580447000,1309580447000,1309580447000]
+  }
+}</pre>
+            </div></div><br class="example-break">
+          </div>
+
+          <div class="section" title="progression"><div class="titlepage"><div><div><h5 class="title"><a name="id3526072"></a>progression</h5></div></div></div>
+            
+
+            <div class="example"><a name="id3526078"></a><p class="title"><b>Example 2.15. An example progression field</b></p><div class="example-contents">
+              
+
+              <pre class="programlisting">{
+  "progression":{
+    "raids":[
+      {
+        "name":"Molten Core",
+        "normal":2,
+        "heroic":0,
+        "id":2717,
+        "bosses":[
+          {
+            "name":"Ragnaros",
+            "normalKills":1,
+            "heroicKills":0,
+            "id":11502
+          }
+        ]
+      },
+      {
+        "name":"Blackwing Lair",
+        "normal":0,
+        "heroic":0,
+        "id":2677,
+        "bosses":[
+          {
+            "name":"Nefarian",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":11583
+          }
+        ]
+      },
+      {
+        "name":"Ruins of Ahn'Qiraj",
+        "normal":2,
+        "heroic":0,
+        "id":3429,
+        "bosses":[
+          {
+            "name":"Ossirian the Unscarred",
+            "normalKills":-1,
+            "heroicKills":0,
+            "id":15339
+          }
+        ]
+      },
+      {
+        "name":"Ahn'Qiraj Temple",
+        "normal":2,
+        "heroic":0,
+        "id":3428,
+        "bosses":[
+          {
+            "name":"C'Thun",
+            "normalKills":1,
+            "heroicKills":0,
+            "id":15727
+          }
+        ]
+      },
+      {
+        "name":"Karazhan",
+        "normal":2,
+        "heroic":0,
+        "id":3457,
+        "bosses":[
+          {
+            "name":"Prince Malchezaar",
+            "normalKills":-1,
+            "heroicKills":0,
+            "id":15690
+          }
+        ]
+      },
+      {
+        "name":"Magtheridon's Lair",
+        "normal":2,
+        "heroic":0,
+        "id":3836,
+        "bosses":[
+          {
+            "name":"Magtheridon",
+            "normalKills":-1,
+            "heroicKills":0,
+            "id":17257
+          }
+        ]
+      },
+      {
+        "name":"Gruul's Lair",
+        "normal":2,
+        "heroic":0,
+        "id":3923,
+        "bosses":[
+          {
+            "name":"Gruul the Dragonkiller",
+            "normalKills":-1,
+            "heroicKills":0,
+            "id":19044
+          }
+        ]
+      },
+      {
+        "name":"Serpentshrine Cavern",
+        "normal":2,
+        "heroic":0,
+        "id":3607,
+        "bosses":[
+          {
+            "name":"Lady Vashj",
+            "normalKills":-1,
+            "heroicKills":0,
+            "id":21212
+          }
+        ]
+      },
+      {
+        "name":"Tempest Keep",
+        "normal":2,
+        "heroic":0,
+        "id":3845,
+        "bosses":[
+          {
+            "name":"Kael'thas Sunstrider",
+            "normalKills":2,
+            "heroicKills":0,
+            "id":19622
+          }
+        ]
+      },
+      {
+        "name":"The Battle for Mount Hyjal",
+        "normal":0,
+        "heroic":0,
+        "id":3606,
+        "bosses":[
+          {
+            "name":"Archimonde",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":17968
+          }
+        ]
+      },
+      {
+        "name":"Black Temple",
+        "normal":2,
+        "heroic":0,
+        "id":3959,
+        "bosses":[
+          {
+            "name":"Illidan Stormrage",
+            "normalKills":1,
+            "heroicKills":0,
+            "id":22917
+          }
+        ]
+      },
+      {
+        "name":"The Sunwell",
+        "normal":0,
+        "heroic":0,
+        "id":4075,
+        "bosses":[
+          {
+            "name":"Kil'jaeden",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":25315
+          }
+        ]
+      },
+      {
+        "name":"Vault of Archavon",
+        "normal":2,
+        "heroic":0,
+        "id":4603,
+        "bosses":[
+          {
+            "name":"Archavon the Stone Watcher",
+            "normalKills":8,
+            "heroicKills":0,
+            "id":31125
+          },
+          {
+            "name":"Emalon the Storm Watcher",
+            "normalKills":2,
+            "heroicKills":0,
+            "id":33993
+          },
+          {
+            "name":"Koralon the Flame Watcher",
+            "normalKills":5,
+            "heroicKills":0,
+            "id":35013
+          },
+          {
+            "name":"Toravon the Ice Watcher",
+            "normalKills":5,
+            "heroicKills":0,
+            "id":38433
+          }
+        ]
+      },
+      {
+        "name":"Naxxramas",
+        "normal":2,
+        "heroic":0,
+        "id":3456,
+        "bosses":[
+          {
+            "name":"Anub'Rekhan",
+            "normalKills":9,
+            "heroicKills":0,
+            "id":15956
+          },
+          {
+            "name":"Grand Widow Faerlina",
+            "normalKills":6,
+            "heroicKills":0,
+            "id":15953
+          },
+          {
+            "name":"Maexxna",
+            "normalKills":7,
+            "heroicKills":0,
+            "id":15952
+          },
+          {
+            "name":"Patchwerk",
+            "normalKills":9,
+            "heroicKills":0,
+            "id":16028
+          },
+          {
+            "name":"Grobbulus",
+            "normalKills":8,
+            "heroicKills":0,
+            "id":15931
+          },
+          {
+            "name":"Gluth",
+            "normalKills":7,
+            "heroicKills":0,
+            "id":15932
+          },
+          {
+            "name":"Thaddius",
+            "normalKills":7,
+            "heroicKills":0,
+            "id":15928
+          },
+          {
+            "name":"Noth the Plaguebringer",
+            "normalKills":10,
+            "heroicKills":0,
+            "id":15954
+          },
+          {
+            "name":"Heigan the Unclean",
+            "normalKills":9,
+            "heroicKills":0,
+            "id":15936
+          },
+          {
+            "name":"Loatheb",
+            "normalKills":9,
+            "heroicKills":0,
+            "id":16011
+          },
+          {
+            "name":"Instructor Razuvious",
+            "normalKills":8,
+            "heroicKills":0,
+            "id":16061
+          },
+          {
+            "name":"Gothik the Harvester",
+            "normalKills":7,
+            "heroicKills":0,
+            "id":16060
+          },
+          {
+            "name":"The Four Horsemen",
+            "normalKills":7,
+            "heroicKills":0,
+            "id":59450
+          },
+          {
+            "name":"Sapphiron",
+            "normalKills":8,
+            "heroicKills":0,
+            "id":15989
+          },
+          {
+            "name":"Kel'Thuzad",
+            "normalKills":8,
+            "heroicKills":0,
+            "id":15990
+          }
+        ]
+      },
+      {
+        "name":"The Obsidian Sanctum",
+        "normal":2,
+        "heroic":0,
+        "id":4493,
+        "bosses":[
+          {
+            "name":"Sartharion",
+            "normalKills":9,
+            "heroicKills":0,
+            "id":28860
+          }
+        ]
+      },
+      {
+        "name":"The Eye of Eternity",
+        "normal":2,
+        "heroic":0,
+        "id":4500,
+        "bosses":[
+          {
+            "name":"Malygos",
+            "normalKills":9,
+            "heroicKills":0,
+            "id":28859
+          }
+        ]
+      },
+      {
+        "name":"Ulduar",
+        "normal":1,
+        "heroic":0,
+        "id":4273,
+        "bosses":[
+          {
+            "name":"Flame Leviathan",
+            "normalKills":6,
+            "heroicKills":0,
+            "id":33113
+          },
+          {
+            "name":"Razorscale",
+            "normalKills":5,
+            "heroicKills":0,
+            "id":33186
+          },
+          {
+            "name":"XT-002 Deconstructor",
+            "normalKills":2,
+            "heroicKills":0,
+            "id":33293
+          },
+          {
+            "name":"Ignis the Furnace Master",
+            "normalKills":2,
+            "heroicKills":0,
+            "id":33118
+          },
+          {
+            "name":"Assembly of Iron",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":65195
+          },
+          {
+            "name":"Kologarn",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":32930
+          },
+          {
+            "name":"Auriaya",
+            "normalKills":1,
+            "heroicKills":0,
+            "id":33515
+          },
+          {
+            "name":"Hodir",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":64899
+          },
+          {
+            "name":"Thorim",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":64985
+          },
+          {
+            "name":"Freya",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":65074
+          },
+          {
+            "name":"Leviathan Mk II",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":33432
+          },
+          {
+            "name":"General Vezax",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":33271
+          },
+          {
+            "name":"Yogg-Saron",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":33288
+          },
+          {
+            "name":"Algalon the Observer",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":65184
+          }
+        ]
+      },
+      {
+        "name":"Onyxia's Lair",
+        "normal":2,
+        "heroic":0,
+        "id":2159,
+        "bosses":[
+          {
+            "name":"Onyxia",
+            "normalKills":4,
+            "heroicKills":0,
+            "id":10184
+          }
+        ]
+      },
+      {
+        "name":"Trial of the Crusader",
+        "normal":2,
+        "heroic":1,
+        "id":4722,
+        "bosses":[
+          {
+            "name":"Icehowl",
+            "normalKills":6,
+            "heroicKills":3,
+            "id":34797
+          },
+          {
+            "name":"Lord Jaraxxus",
+            "normalKills":6,
+            "heroicKills":3,
+            "id":34780
+          },
+          {
+            "name":"Defeat the Faction Champions",
+            "normalKills":5,
+            "heroicKills":1,
+            "id":68184
+          },
+          {
+            "name":"Eydis Darkbane",
+            "normalKills":5,
+            "heroicKills":1,
+            "id":34496
+          },
+          {
+            "name":"Anub'arak",
+            "normalKills":5,
+            "heroicKills":0,
+            "id":34564
+          }
+        ]
+      },
+      {
+        "name":"Icecrown Citadel",
+        "normal":2,
+        "heroic":0,
+        "id":4812,
+        "bosses":[
+          {
+            "name":"Lord Marrowgar",
+            "normalKills":18,
+            "heroicKills":0,
+            "id":36612
+          },
+          {
+            "name":"Lady Deathwhisper",
+            "normalKills":18,
+            "heroicKills":0,
+            "id":36855
+          },
+          {
+            "name":"Claim victory in the Gunship Battle",
+            "normalKills":18,
+            "heroicKills":0,
+            "id":72959
+          },
+          {
+            "name":"The Deathbringer",
+            "normalKills":16,
+            "heroicKills":0,
+            "id":72928
+          },
+          {
+            "name":"Festergut",
+            "normalKills":13,
+            "heroicKills":0,
+            "id":36626
+          },
+          {
+            "name":"Rotface",
+            "normalKills":11,
+            "heroicKills":0,
+            "id":36627
+          },
+          {
+            "name":"Professor Putricide",
+            "normalKills":6,
+            "heroicKills":0,
+            "id":36678
+          },
+          {
+            "name":"Prince Valanar",
+            "normalKills":9,
+            "heroicKills":0,
+            "id":37970
+          },
+          {
+            "name":"Blood-Queen Lana'thel",
+            "normalKills":5,
+            "heroicKills":0,
+            "id":37955
+          },
+          {
+            "name":"Rescue Valithria Dreamwalker",
+            "normalKills":4,
+            "heroicKills":0,
+            "id":72706
+          },
+          {
+            "name":"Sindragosa",
+            "normalKills":2,
+            "heroicKills":0,
+            "id":36853
+          },
+          {
+            "name":"The Lich King",
+            "normalKills":1,
+            "heroicKills":0,
+            "id":36597
+          }
+        ]
+      },
+      {
+        "name":"The Ruby Sanctum",
+        "normal":0,
+        "heroic":0,
+        "id":4987,
+        "bosses":[
+          {
+            "name":"Halion",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":39863
+          }
+        ]
+      },
+      {
+        "name":"Baradin Hold",
+        "normal":0,
+        "heroic":0,
+        "id":5600,
+        "bosses":[
+          {
+            "name":"Argaloth",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":47120
+          },
+          {
+            "name":"Occu'thar",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":52363
+          }
+        ]
+      },
+      {
+        "name":"Blackwing Descent",
+        "normal":0,
+        "heroic":0,
+        "id":5094,
+        "bosses":[
+          {
+            "name":"Magmaw",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":41570
+          },
+          {
+            "name":"Toxitron",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":42180
+          },
+          {
+            "name":"Maloriak",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":41378
+          },
+          {
+            "name":"Atramedes",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":41442
+          },
+          {
+            "name":"Chimaeron",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":43296
+          },
+          {
+            "name":"Nefarian",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":41376
+          }
+        ]
+      },
+      {
+        "name":"The Bastion of Twilight",
+        "normal":0,
+        "heroic":0,
+        "id":5334,
+        "bosses":[
+          {
+            "name":"Halfus Wyrmbreaker",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":44600
+          },
+          {
+            "name":"Valiona",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":45992
+          },
+          {
+            "name":"Elementium Monstrosity",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":43735
+          },
+          {
+            "name":"Cho'gall",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":43324
+          },
+          {
+            "name":"Sinestra",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":45213
+          }
+        ]
+      },
+      {
+        "name":"Throne of the Four Winds",
+        "normal":0,
+        "heroic":0,
+        "id":5638,
+        "bosses":[
+          {
+            "name":"Conclave of Wind",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":88835
+          },
+          {
+            "name":"Al'Akir",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":46753
+          }
+        ]
+      },
+      {
+        "name":"Firelands",
+        "normal":0,
+        "heroic":0,
+        "id":5723,
+        "bosses":[
+          {
+            "name":"Beth'tilac",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":52498
+          },
+          {
+            "name":"Lord Rhyolith",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":53772
+          },
+          {
+            "name":"Alysrazor",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":52530
+          },
+          {
+            "name":"Shannox",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":53691
+          },
+          {
+            "name":"Baleroc",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":53494
+          },
+          {
+            "name":"Majordomo Staghelm",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":52571
+          },
+          {
+            "name":"Ragnaros",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":102237
+          },
+          {
+            "name":"Ragnaros",
+            "normalKills":0,
+            "heroicKills":0,
+            "id":52409
+          }
+        ]
+      }
+    ]
+  }
+}</pre>
+            </div></div><br class="example-break">
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="section" title="Guild Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3414716"></a>Guild Resources</h2></div></div></div>
+    <div class="section" title="Guild Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3526363"></a>Guild Resources</h2></div></div></div>
       
 
       <p>Guild APIs currently provide guild profile information.</p>
 
-      <div class="section" title="Profile API"><div class="titlepage"><div><div><h3 class="title"><a name="id3414726"></a>Profile API</h3></div></div></div>
+      <div class="section" title="Profile API"><div class="titlepage"><div><div><h3 class="title"><a name="id3526372"></a>Profile API</h3></div></div></div>
         
 
         <p>The guild profile API is the primary way to access guild
@@ -1154,7 +1904,7 @@ Realm = &lt;proper realm name&gt; | &lt;normalized realm name&gt;</pre>
         optional datasets is to be retrieved. Those additional fields are
         listed in the subsection titled "Optional Fields".</p>
 
-        <div class="example"><a name="id3414761"></a><p class="title"><b>Example 2.14. An example Guild Profile request and response.</b></p><div class="example-contents">
+        <div class="example"><a name="id3526410"></a><p class="title"><b>Example 2.16. An example Guild Profile request and response.</b></p><div class="example-contents">
           
 
           <pre class="programlisting">GET /api/wow/guild/Medivh/Roll%20the%20Dice
@@ -1169,7 +1919,7 @@ Host: us.battle.net</pre>
         <p>The core dataset returned includes the guild's name, level,
         faction and achievement points.</p>
 
-        <div class="section" title="Optional Fields"><div class="titlepage"><div><div><h4 class="title"><a name="id3414784"></a>Optional Fields</h4></div></div></div>
+        <div class="section" title="Optional Fields"><div class="titlepage"><div><div><h4 class="title"><a name="id3526435"></a>Optional Fields</h4></div></div></div>
           
 
           <p>This section contains a list of the optional fields that can
@@ -1183,7 +1933,7 @@ Host: us.battle.net</pre>
                 earned by the guild.</p>
               </dd></dl></div>
 
-          <div class="example"><a name="id3414838"></a><p class="title"><b>Example 2.15. An example Guild Profile request with several addtional
+          <div class="example"><a name="id3526486"></a><p class="title"><b>Example 2.17. An example Guild Profile request with several addtional
             fields.</b></p><div class="example-contents">
             
 
@@ -1191,14 +1941,14 @@ Host: us.battle.net</pre>
 Host: us.battle.net</pre>
           </div></div><br class="example-break">
 
-          <div class="section" title="members"><div class="titlepage"><div><div><h5 class="title"><a name="id3414852"></a>members</h5></div></div></div>
+          <div class="section" title="members"><div class="titlepage"><div><div><h5 class="title"><a name="id3526499"></a>members</h5></div></div></div>
             
 
             <p>When the members list is requrested, a list of character
             objects is returned. Each object in the returned members list
             contains a character block as well as a rank field.</p>
 
-            <div class="example"><a name="id3414865"></a><p class="title"><b>Example 2.16. An example members block</b></p><div class="example-contents">
+            <div class="example"><a name="id3526514"></a><p class="title"><b>Example 2.18. An example members block</b></p><div class="example-contents">
               
 
               <pre class="programlisting">  "members":[
@@ -1362,7 +2112,7 @@ Host: us.battle.net</pre>
             </div></div><br class="example-break">
           </div>
 
-          <div class="section" title="achievements"><div class="titlepage"><div><div><h5 class="title"><a name="id3414936"></a>achievements</h5></div></div></div>
+          <div class="section" title="achievements"><div class="titlepage"><div><div><h5 class="title"><a name="id3526585"></a>achievements</h5></div></div></div>
             
 
             <p>When requesting achievement data, several sets of data will
@@ -1394,7 +2144,7 @@ Host: us.battle.net</pre>
                   criteria.</p>
                 </dd></dl></div>
 
-            <div class="example"><a name="id3415065"></a><p class="title"><b>Example 2.17. An example achievements block</b></p><div class="example-contents">
+            <div class="example"><a name="id3526714"></a><p class="title"><b>Example 2.19. An example achievements block</b></p><div class="example-contents">
               
 
               <pre class="programlisting">"achievements":{
@@ -1411,12 +2161,12 @@ Host: us.battle.net</pre>
       </div>
     </div>
 
-    <div class="section" title="Realm Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3415087"></a>Realm Resources</h2></div></div></div>
+    <div class="section" title="Realm Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3526736"></a>Realm Resources</h2></div></div></div>
       
 
       <p>Realm APIs currently provide realm status information.</p>
 
-      <div class="section" title="Realm Status"><div class="titlepage"><div><div><h3 class="title"><a name="id3415097"></a>Realm Status</h3></div></div></div>
+      <div class="section" title="Realm Status"><div class="titlepage"><div><div><h3 class="title"><a name="id3526745"></a>Realm Status</h3></div></div></div>
         
 
         <p>The realm status API allows developers to retrieve realm status
@@ -1431,7 +2181,7 @@ Host: us.battle.net</pre>
         parameter can optionally be passed to limit the realms returned to one
         or more.</p>
 
-        <div class="example"><a name="id3415125"></a><p class="title"><b>Example 2.18. An example Realm Status request and response</b></p><div class="example-contents">
+        <div class="example"><a name="id3526774"></a><p class="title"><b>Example 2.20. An example Realm Status request and response</b></p><div class="example-contents">
           
 
           <pre class="programlisting">GET /api/wow/realm/status?realms=Medivh,Lightbringer HTTP/1.1
@@ -1465,13 +2215,13 @@ Host: us.battle.net
       </div>
     </div>
 
-    <div class="section" title="Data Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3415149"></a>Data Resources</h2></div></div></div>
+    <div class="section" title="Data Resources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id3526800"></a>Data Resources</h2></div></div></div>
       
 
       <p>The data APIs provide information that can compliment profile
       information to provide structure, definition and context.</p>
 
-      <div class="section" title="Character Races"><div class="titlepage"><div><div><h3 class="title"><a name="id3415162"></a>Character Races</h3></div></div></div>
+      <div class="section" title="Character Races"><div class="titlepage"><div><div><h3 class="title"><a name="id3526812"></a>Character Races</h3></div></div></div>
         
 
         <p>The character races data API provides a list of character
@@ -1480,7 +2230,7 @@ Host: us.battle.net
         <pre class="programlisting">URL = Host + "/api/wow/data/character/races"</pre>
       </div>
 
-      <div class="section" title="Character Classes"><div class="titlepage"><div><div><h3 class="title"><a name="id3415179"></a>Character Classes</h3></div></div></div>
+      <div class="section" title="Character Classes"><div class="titlepage"><div><div><h3 class="title"><a name="id3526828"></a>Character Classes</h3></div></div></div>
         
 
         <p>The character classes data API provides a list of character
@@ -1489,7 +2239,7 @@ Host: us.battle.net
         <pre class="programlisting">URL = Host + "/api/wow/data/character/classes"</pre>
       </div>
 
-      <div class="section" title="Guild Rewards"><div class="titlepage"><div><div><h3 class="title"><a name="id3415196"></a>Guild Rewards</h3></div></div></div>
+      <div class="section" title="Guild Rewards"><div class="titlepage"><div><div><h3 class="title"><a name="id3526845"></a>Guild Rewards</h3></div></div></div>
         
 
         <p>The guild rewards data API provides a list of all guild
@@ -1498,7 +2248,7 @@ Host: us.battle.net
         <pre class="programlisting">URL = Host + "/api/wow/data/guild/rewards"</pre>
       </div>
 
-      <div class="section" title="Guild Perks"><div class="titlepage"><div><div><h3 class="title"><a name="id3415212"></a>Guild Perks</h3></div></div></div>
+      <div class="section" title="Guild Perks"><div class="titlepage"><div><div><h3 class="title"><a name="id3526861"></a>Guild Perks</h3></div></div></div>
         
 
         <p>The guild perks data API provides a list of all guild
@@ -1507,14 +2257,14 @@ Host: us.battle.net
         <pre class="programlisting">URL = Host + "/api/wow/data/guild/perks"</pre>
       </div>
 
-      <div class="section" title="Items"><div class="titlepage"><div><div><h3 class="title"><a name="id3415229"></a>Items</h3></div></div></div>
+      <div class="section" title="Items"><div class="titlepage"><div><div><h3 class="title"><a name="id3526878"></a>Items</h3></div></div></div>
         
 
         <p>The items data API provides detailed item information.</p>
 
         <pre class="programlisting">URL = Host + "/api/wow/data/item/" + ItemId</pre>
 
-        <div class="example"><a name="id3415245"></a><p class="title"><b>Example 2.19. An example Item Data API request and response</b></p><div class="example-contents">
+        <div class="example"><a name="id3526894"></a><p class="title"><b>Example 2.21. An example Item Data API request and response</b></p><div class="example-contents">
           
 
           <pre class="programlisting">GET /api/wow/data/item/38268 HTTP/1.1
@@ -1580,10 +2330,36 @@ Host: us.battle.net
     </div>
   </div>
 
-  <div class="chapter" title="Chapter 3. API Policy"><div class="titlepage"><div><div><h2 class="title"><a name="id3415278"></a>Chapter 3. API Policy</h2></div></div></div>
+  <div class="chapter" title="Chapter 3. API Policy"><div class="titlepage"><div><div><h2 class="title"><a name="id3526927"></a>Chapter 3. API Policy</h2></div></div></div>
     
 
     <p>The final policy document is being reviewed and will be published at
     a later date.</p>
+  </div>
+
+  <div class="chapter" title="Chapter 4. Frequently Asked Questions"><div class="titlepage"><div><div><h2 class="title"><a name="id3526940"></a>Chapter 4. Frequently Asked Questions</h2></div></div></div>
+    
+
+    <div class="qandaset" title="Frequently Asked Questions"><a name="id3526946"></a><dl><dt></dt><dd><dl><dt>4.1.1. <a href="#id3526951">Is there an official library or reference implementation
+            provided with these web APIs?</a></dt><dt>4.1.2. <a href="#id3527002">What about XML/Atom/JSONP/Other data forms?</a></dt></dl></dd></dl><table border="0" width="100%" summary="Q and A Set"><col align="left" width="1%"><col><tbody><tr class="toc"><td align="left" valign="top" colspan="2"><dl><dt>4.1.1. <a href="#id3526951">Is there an official library or reference implementation
+            provided with these web APIs?</a></dt><dt>4.1.2. <a href="#id3527002">What about XML/Atom/JSONP/Other data forms?</a></dt></dl></td></tr>
+          <tr class="question" title="4.1.1."><td align="left" valign="top"><a name="id3526951"></a><a name="id3526953"></a><p><b>4.1.1.</b></p></td><td align="left" valign="top"><p>Is there an official library or reference implementation
+            provided with these web APIs?</p></td></tr>
+
+          <tr class="answer"><td align="left" valign="top"></td><td align="left" valign="top"><p>No, Blizzard Entertainment has not released an officially
+            support client library to consume the web APIs. There are a number
+            of unofficial libraries that follow the spec provided by this
+            documentation. You are not limited to or forced to use one of the
+            libraries below and can create your own.</p><div class="variablelist"><dl><dt><span class="term">Python</span></dt><dd>
+                  <p>https://github.com/vishnevskiy/battlenet</p>
+                </dd></dl></div></td></tr>
+        
+          <tr class="question" title="4.1.2."><td align="left" valign="top"><a name="id3527002"></a><a name="id3527004"></a><p><b>4.1.2.</b></p></td><td align="left" valign="top"><p>What about XML/Atom/JSONP/Other data forms?</p></td></tr>
+
+          <tr class="answer"><td align="left" valign="top"></td><td align="left" valign="top"><p>We decided to roll out JSON for numerous reasons. One of the
+            main reasons is that it allows developers and website operators to
+            easily embed requests that consume this date into their
+            websites.</p></td></tr>
+        </tbody></table></div>
   </div>
 </div></body></html>
