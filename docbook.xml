@@ -465,12 +465,12 @@ Host: us.battle.net
         <title>Character Profile</title>
 
         <para>The <emphasis>Character Profile</emphasis> API is the primary way to access character
-        information. The <emphasis>Character Profile</emphasis> API can be used to fetch a single
+        information. This <emphasis>Character Profile</emphasis> API can be used to fetch a single
         character at a time through an HTTP GET request to a URL describing
         the character profile resource. By default, a basic dataset will be
         returned and with each request, and zero or more, additional fields can
         be retrieved. To access this API, craft a resource URL pointing to the
-        character whos information is to be retrieved.</para>
+        character whose information is to be retrieved.</para>
 
         <programlisting>URL = Host + "/api/wow/character/" + Realm + "/" + CharacterName
 
@@ -483,7 +483,7 @@ Realm = &lt;proper realm name&gt; | &lt;normalized realm name&gt;</programlistin
         listed in the subsection titled "Optional Fields".</para>
 
         <example>
-          <title>An example Character Profile API request and
+          <title>An example <emphasis>Character Profile</emphasis> API request and
           response.</title>
 
           <programlisting>GET /api/wow/character/Medivh/Uther?fields=guild
@@ -538,7 +538,7 @@ Host: us.battle.net</programlisting>
               <term>items</term>
 
               <listitem>
-                <para>A list of items equipted by the character. Use of this
+                <para>A list of items equipped by the character. Use of this
                 field will also include the <emphasis>average item
                 level</emphasis> and <emphasis>average item level
                 equipped</emphasis> for the character.</para>
@@ -647,7 +647,7 @@ Host: us.battle.net</programlisting>
           </variablelist>
 
           <example>
-            <title>An example Character Profile request with several addtional
+            <title>An example <emphasis>Character Profile</emphasis> request with several additional
             fields.</title>
 
             <programlisting>GET /api/wow/character/Medivh/Uther?fields=guild,items,professions,reputation,stats
@@ -660,9 +660,9 @@ Host: us.battle.net</programlisting>
             <para>When a guild is requested, a map is returned with key/value
             pairs that describe a basic set of guild information. Note that
             the rank of the character is not included in this block as it
-            describes a guild and not a membership of the guild. To retreive
-            the character's rank within the guild, you must specific a
-            seperate request to the guild profile resource.</para>
+            describes a guild and not a membership of the guild. To retrieve
+            the character's rank within the guild, you must submit a
+            separate request to the guild profile resource.</para>
 
             <example>
               <title>An example guild field</title>
@@ -953,15 +953,15 @@ Host: us.battle.net</programlisting>
       <para>Guild APIs currently provide guild profile information.</para>
 
       <section>
-        <title>Profile API</title>
+        <title>Guild Profile API</title>
 
-        <para>The guild profile API is the primary way to access guild
-        information. This guild profile API can be used to fetch a single
+        <para>The <emphasis>Guild Profile</emphasis> API is the primary way to access guild
+        information. This <emphasis>Guild Profile</emphasis> API can be used to fetch a single
         guild at a time through an HTTP GET request to a url describing the
         guild profile resource. By default, a basic dataset will be returned
         and with each request and zero or more additional fields can be
         retrieved. To access this API, craft a resource URL pointing to the
-        guild whos information is to be retrieved.</para>
+        guild whose information is to be retrieved.</para>
 
         <programlisting>URL = Host + "/api/wow/guild/" + Realm + "/" + GuildName
 
@@ -974,7 +974,7 @@ Realm = &lt;proper realm name&gt; | &lt;normalized realm name&gt;</programlistin
         listed in the subsection titled "Optional Fields".</para>
 
         <example>
-          <title>An example Guild Profile request and response.</title>
+          <title>An example <emphasis>Guild Profile</emphasis> API request and response.</title>
 
           <programlisting>GET /api/wow/guild/Medivh/Knights%20of%20the%20Silver%20Hand
 Host: us.battle.net</programlisting>
@@ -1000,7 +1000,7 @@ Host: us.battle.net</programlisting>
 
               <listitem>
                 <para>A list of characters that are a member of the
-                guild</para>
+                guild.</para>
               </listitem>
             </varlistentry>
 
@@ -1015,7 +1015,7 @@ Host: us.battle.net</programlisting>
           </variablelist>
 
           <example>
-            <title>An example Guild Profile request with several addtional
+            <title>An example <emphasis>Guild Profile</emphasis> request with several additional
             fields.</title>
 
             <programlisting>GET /api/wow/guild/Medivh/Knights%20of%20the%20Silver%20Hand?fields=achievements,members
@@ -1025,7 +1025,7 @@ Host: us.battle.net</programlisting>
           <section>
             <title>members</title>
 
-            <para>When the members list is requrested, a list of character
+            <para>When the members list is requested, a list of character
             objects is returned. Each object in the returned members list
             contains a character block as well as a rank field.</para>
 
@@ -1068,7 +1068,7 @@ Host: us.battle.net</programlisting>
 
                 <listitem>
                   <para>A list of criteria ids that can be used to determine
-                  the partial completedness of guild achievements.</para>
+                  the partial completeness of guild achievements.</para>
                 </listitem>
               </varlistentry>
 
@@ -1078,7 +1078,7 @@ Host: us.battle.net</programlisting>
                 <listitem>
                   <para>A list of values associated with a given achievement
                   criteria. The position of a value corresponds to the
-                  position of a given achivement criteria.</para>
+                  position of a given achievement criteria.</para>
                 </listitem>
               </varlistentry>
 
@@ -1088,7 +1088,7 @@ Host: us.battle.net</programlisting>
                 <listitem>
                   <para>A list of timestamps where the value represents when
                   the criteria was considered complete. The position of a
-                  value corresponds to the position of a given achivement
+                  value corresponds to the position of a given achievement
                   criteria.</para>
                 </listitem>
               </varlistentry>
@@ -1099,7 +1099,7 @@ Host: us.battle.net</programlisting>
                 <listitem>
                   <para>A list of timestamps where the value represents when
                   the criteria was considered started. The position of a value
-                  corresponds to the position of a given achivement
+                  corresponds to the position of a given achievement
                   criteria.</para>
                 </listitem>
               </varlistentry>
@@ -1124,7 +1124,7 @@ Host: us.battle.net</programlisting>
       <section>
         <title>Realm Status</title>
 
-        <para>The realm status API allows developers to retrieve realm status
+        <para>The <emphasis>Realm Status</emphasis> API allows developers to retrieve realm status
         information. This information is limited to whether or not the realm
         is up, the type and state of the realm and the current
         population.</para>
@@ -1137,7 +1137,7 @@ Host: us.battle.net</programlisting>
         or more.</para>
 
         <example>
-          <title>An example Realm Status request and response</title>
+          <title>An example <emphasis>Realm Status</emphasis> API request and response</title>
 
           <programlisting>GET /api/wow/realm/status?realms=Medivh,Lightbringer HTTP/1.1
 Host: us.battle.net
@@ -1182,7 +1182,7 @@ Host: us.battle.net
       <section>
         <title>Current Auctions APIs</title>
 
-        <para>This API resource provides a per-realm list of recently
+        <para>The <emphasis>Current Auctions</emphasis> API resource provides a per-realm list of recently
         generated auction house data dumps.</para>
 
         <programlisting>URL = Host + "/api/wow/auction/data/" + realm</programlisting>
@@ -1191,7 +1191,7 @@ Host: us.battle.net
         this resource.</para>
 
         <example>
-          <title>An example Current Auctions request and response</title>
+          <title>An example <emphasis>Current Auctions</emphasis> API request and response</title>
 
           <programlisting>GET /api/wow/auction/data/medivh HTTP/1.1
 Host: us.battle.net
@@ -1271,12 +1271,12 @@ Host: us.battle.net
       <section>
         <title>Item API</title>
 
-        <para>The item API provides detailed item information.</para>
+        <para>The <emphasis>Item</emphasis> API provides detailed item information.</para>
 
         <programlisting>URL = Host + "/api/wow/item/" + ItemId</programlisting>
 
         <example>
-          <title>An example Item API request and response</title>
+          <title>An example <emphasis>Item</emphasis> API request and response</title>
 
           <programlisting>GET /api/wow/item/38268 HTTP/1.1
 Host: us.battle.net
@@ -1341,14 +1341,14 @@ Host: us.battle.net
       <section>
         <title>Arena Team API</title>
 
-        <para>The Arena Team API provides detailed arena team
+        <para>The <emphasis>Arena Team</emphasis> API provides detailed arena team
         information.</para>
 
         <programlisting>TeamSize = "2v2" | "3v3" | "5v5"
 URL = Host + "/api/wow/arena/" + Realm + "/" + TeamSize + "/" + TeamName</programlisting>
 
         <example>
-          <title>An example Arena Team API request and response</title>
+          <title>An example <emphasis>Arena Team</emphasis> API request and response</title>
 
           <programlisting>GET /api/wow/arena/bonechewer/2v2/Samurai%20Jack HTTP/1.1
 Host: us.battle.net
@@ -1420,16 +1420,16 @@ Host: us.battle.net
       </section>
 
       <section>
-        <title>Arena Ladder API</title>
+        <title>Arena Team Ladder API</title>
 
-        <para>The Arena Team Ladder API provides arena ladder information for
+        <para>The <emphasis>Arena Team Ladder</emphasis> API provides arena ladder information for
         a battlegroup.</para>
 
         <programlisting>TeamSize = "2v2" | "3v3" | "5v5"
 URL = Host + "/api/wow/pvp/arena/" + Battlegroup + "/" + TeamSize</programlisting>
 
         <example>
-          <title>An example Arena Team Ladder API request and response</title>
+          <title>An example <emphasis>Arena Team Ladder</emphasis> API request and response</title>
 
           <programlisting>GET /api/wow/pvp/arena/ruin/2v2 HTTP/1.1
 Host: us.battle.net
