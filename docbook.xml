@@ -225,7 +225,7 @@ Host: us.battle.net
       <section>
         <title>Application Registration</title>
 
-        <para>To send authenticated request you first need to register an
+        <para>To send authenticated requests you first need to register an
         application. Because registration isn't automated, application
         registration is limited to those who meet the following
         criteria:</para>
@@ -253,7 +253,7 @@ Host: us.battle.net
       <section>
         <title>Authentication Process</title>
 
-        <para>To authenticate a request, simple include the "Authorization"
+        <para>To authenticate a request, simply include the "Authorization"
         header with your application identifier and the request
         signature.</para>
 
@@ -266,14 +266,14 @@ Date: Fri, 10 Jun 2011 20:59:24 GMT
 Authorization: <computeroutput>BNET</computeroutput> <computeroutput>c1fbf21b79c03191d</computeroutput>:<computeroutput>+3fE0RaKc+PqxN0gi8va5GQC35A=</computeroutput></programlisting>
         </example>
 
-        <para>In the above exmple, the value of the Authorization header has
+        <para>In the above example, the value of the Authorization header has
         three parts "<code>BNET</code>", "<code>c1fbf21b79c03191d</code>" and
         "<code>+3fE0RaKc+PqxN0gi8va5GQC35A=</code>". The first part is a
         processing directive for the Authorization header. The second and
         third values are the application public key and the request signature.
         The application public key is assigned by Blizzard during the
         application registration process. The signature is generated with each
-        request and is discribed by the following algorithm.</para>
+        request and is described by the following algorithm.</para>
 
         <programlisting>UrlPath = &lt;HTTP-Request-URI, from the port to the query string&gt;
 
@@ -300,8 +300,8 @@ Header = "Authorization: BNET" + " " + "examplekey" + ":" + Signature;</programl
 
         <para>The date timestamp used in the above algorithm and example is
         the value of the Date HTTP header. The two date values, the first
-        being used to sign the request and the second as sent with the request
-        headers, must be the same and within 5 minutes of the current GMT
+        being used to sign the request (with authorization code) and the second as sent with the request
+        headers (above algorithm), must be the same and within 5 minutes of the current GMT
         time.</para>
 
         <important>
@@ -325,12 +325,12 @@ Header = "Authorization: BNET" + " " + "examplekey" + ":" + Signature;</programl
 
       <para>Although several of the API resources have specific error
       responses that correspond to specific situations, there are several
-      generic error responses that you should be aware of.</para>
+      generic error responses that you should consider.</para>
 
       <para>Errors are returned as JSON objects that contain
       "<code>status</code>" and "<code>reason</code>" attributes. The value of
       the "<code>status</code>" attribute will always be "nok". The reason
-      will be an english string that may be, but is not limited to, one of the
+      will be an English string that may be, but is not limited to, one of the
       following strings.</para>
 
       <variablelist>
@@ -407,7 +407,7 @@ Header = "Authorization: BNET" + " " + "examplekey" + ":" + Signature;</programl
           <listitem>
             <para>HTTP Response Code: 500</para>
 
-            <para>The application authorization information was mallformed or
+            <para>The application authorization information was malformed or
             missing when expected.</para>
           </listitem>
         </varlistentry>
@@ -419,14 +419,14 @@ Header = "Authorization: BNET" + " " + "examplekey" + ":" + Signature;</programl
             <para>HTTP Response Code: 500</para>
 
             <para>The application request signature was missing or invalid.
-            This will also be thrown if the request date outside of a 15
+            This will also be thrown if the request date was outside of a 15
             second window from the current GMT time.</para>
           </listitem>
         </varlistentry>
       </variablelist>
 
       <example>
-        <title>An example API request and and error response</title>
+        <title>An example API request and error response</title>
 
         <programlisting>GET /api/wow/data/boss/45 HTTP/1.1
 Host: us.battle.net
@@ -448,7 +448,7 @@ Host: us.battle.net
       <address><link xlink:href="http://us.battle.net/wow/en/forum/2626217/">http://us.battle.net/wow/en/forum/2626217/</link></address>
 
       <para>You can also email <email>api-support@blizzard.com</email> for
-      matters that you may not want public discussion for.</para>
+      matters that you may not want in public discussion.</para>
     </section>
   </chapter>
 
@@ -462,13 +462,13 @@ Host: us.battle.net
       information.</para>
 
       <section>
-        <title>Profile</title>
+        <title>Character Profile</title>
 
-        <para>The Character Profile API is the primary way to access character
-        information. This Character Profile API can be used to fetch a single
+        <para>The <emphasis>Character Profile</emphasis> API is the primary way to access character
+        information. The <emphasis>Character Profile</emphasis> API can be used to fetch a single
         character at a time through an HTTP GET request to a URL describing
         the character profile resource. By default, a basic dataset will be
-        returned and with each request and zero or more additional fields can
+        returned and with each request, and zero or more, additional fields can
         be retrieved. To access this API, craft a resource URL pointing to the
         character whos information is to be retrieved.</para>
 
