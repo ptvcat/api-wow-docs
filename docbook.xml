@@ -113,6 +113,7 @@ Host: us.battle.net
         providing localized strings using the <code>locale</code> query string
         parameter. The locales supported vary from region to region and align
         with those supported on the community sites.</para>
+        <!-- define list of abbreviated locales --> 
 
         <variablelist>
           <varlistentry>
