@@ -1449,12 +1449,12 @@ Host: us.battle.net
       <section>
         <title>Quest API</title>
 
-        <para>The quest API provides detailed quest information.</para>
+        <para>The <emphasis>Quest</emphasis> API provides detailed quest information.</para>
 
         <programlisting>URL = Host + "/api/wow/quest/" + QuestId</programlisting>
 
         <example>
-          <title>An example quest API request and response</title>
+          <title>An example <emphasis>Quest</emphasis> API request and response</title>
 
           <programlisting>GET /api/wow/quest/13146 HTTP/1.1
 Host: us.battle.net
@@ -1484,7 +1484,7 @@ Host: us.battle.net
       <section>
         <title>Battlegroups</title>
 
-        <para>The battlegroups data API provides the list of battlegroups for
+        <para>The <emphasis>Battlegroups</emphasis> data API provides the list of battlegroups for
         this region.</para>
 
         <programlisting>URL = Host + "/api/wow/data/battlegroups"</programlisting>
@@ -1493,7 +1493,7 @@ Host: us.battle.net
       <section>
         <title>Character Races</title>
 
-        <para>The character races data API provides a list of character
+        <para>The <emphasis>Character Races</emphasis> data API provides a list of character
         races.</para>
 
         <programlisting>URL = Host + "/api/wow/data/character/races"</programlisting>
@@ -1502,7 +1502,7 @@ Host: us.battle.net
       <section>
         <title>Character Classes</title>
 
-        <para>The character classes data API provides a list of character
+        <para>The <emphasis>Character Classes</emphasis> data API provides a list of character
         classes.</para>
 
         <programlisting>URL = Host + "/api/wow/data/character/classes"</programlisting>
@@ -1511,7 +1511,7 @@ Host: us.battle.net
       <section>
         <title>Character Achievements</title>
 
-        <para>The character achievements data API provides a list of all of
+        <para>The <emphasis>Character Achievements</emphasis> data API provides a list of all of
         the achievements that characters can earn as well as the category
         structure and hierarchy.</para>
 
@@ -1521,7 +1521,7 @@ Host: us.battle.net
       <section>
         <title>Guild Rewards</title>
 
-        <para>The guild rewards data API provides a list of all guild
+        <para>The <emphasis>Guild Rewards</emphasis> data API provides a list of all guild
         rewards.</para>
 
         <programlisting>URL = Host + "/api/wow/data/guild/rewards"</programlisting>
@@ -1530,7 +1530,7 @@ Host: us.battle.net
       <section>
         <title>Guild Perks</title>
 
-        <para>The guild perks data API provides a list of all guild
+        <para>The <emphasis>Guild Perks</emphasis> data API provides a list of all guild
         perks.</para>
 
         <programlisting>URL = Host + "/api/wow/data/guild/perks"</programlisting>
@@ -1539,7 +1539,7 @@ Host: us.battle.net
       <section>
         <title>Guild Achievements</title>
 
-        <para>The guild achievements data API provides a list of all of the
+        <para>The <emphasis>Guild Achievements</emphasis> data API provides a list of all of the
         achievements that guilds can earn as well as the category structure
         and hierarchy.</para>
 
@@ -1549,7 +1549,7 @@ Host: us.battle.net
       <section>
         <title>Item Classes</title>
 
-        <para>The item classes data API provides a list of item
+        <para>The <emphasis>Item Classes</emphasis> data API provides a list of item
         classes.</para>
 
         <programlisting>URL = Host + "/api/wow/data/item/classes"</programlisting>
